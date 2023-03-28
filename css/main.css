@@ -919,7 +919,7 @@ img {
 .all_eve,
 .all_coff,
 .all_drink,
-.all_eve {
+.all_desert {
   display: none;
   flex-wrap: wrap;
 }
@@ -929,7 +929,11 @@ img {
   height: 240px;
   padding: 0 4px;
 }
-.all_box .product_img img{height: 160px;}
+
+.all_box .product_img img {
+  height: 160px;
+}
+
 .all_box .pa {
   letter-spacing: -0.4px;
 }
@@ -951,7 +955,8 @@ img {
 
 #every:checked~.all .all_sheet .all_eve,
 #all_coffee:checked~.all .all_sheet .all_coff,
-#all_tea:checked~.all .all_sheet .all_drink {
+#all_tea:checked~.all .all_sheet .all_drink,
+#all_cake:checked~.all .all_sheet .all_desert {
   display: flex;
 }
 
@@ -1005,7 +1010,7 @@ img {
   }
 
   .pa {
-    line-height: 15px;
+    line-height: 16px;
     font-size: 1rem;
   }
 
@@ -1015,6 +1020,8 @@ img {
 
   .label label {
     font-size: 1rem;
+    height: 50px;
+    line-height: 50px;
   }
 }
 
