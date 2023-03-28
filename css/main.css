@@ -842,7 +842,7 @@ img {
 }
 
 .review_comment .prod {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding-top: 5px;
   height: 45px;
 }
@@ -877,6 +877,53 @@ img {
   visibility: visible;
   font-weight: bold;
   font-size: 20px;
+}
+
+
+
+/**************all****************/
+
+.all {
+  overflow: hidden;
+}
+
+.all_tab {
+  float: left;
+  overflow: hidden;
+  font-size: 0;
+  margin-left: 5px;
+}
+
+.all_tab label {
+  float: left;
+  font-size: 0.9rem;
+}
+
+.all_tab label:first-child:before {
+  display: none;
+}
+
+.all_tab label::before {
+  content: "";
+  display: block;
+  float: left;
+  width: 1px;
+  height: 20px;
+  color: #000;
+  margin: 0 5px;
+  background-color: #000;
+}
+
+.all_select {
+  float: right;
+  margin-right: 5px;
+}
+
+#every,
+#all_coffee,
+#all_tea,
+#all_cake {
+  display: none;
 }
 
 @media (min-width:601px) {
