@@ -1,0 +1,57 @@
+md : 디렉토리생성
+cd / cd.. : 디렉토리 이동
+dir : 파일위치
+dir -h :숨겨진 파일
+
+1. git:설치
+2. git: git 명령어 확인
+3. git -v : git 설치 버전확인
+
+4. 사용자 환경설정
+git config --global user.name '이름'
+git config --global user.email '이메일주소'
+
+5. git 명령어
+git init
+git status
+git add '스테이징할 파일명'
+git commit -m '메세지'
+git log
+
+6. 복합 명령어
+git add . : 수정된 모든 파일을 스테이징(단, 한번이상 commit된 파일에만 적용)
+git commit -am '메세지' : 스테이징과 commit을 한번에 함(단, 한번이상 commit된 파일에만 적용)
+
+
+7. 되돌리기
+git restore 파일이름 : 수정되기전으로 작업내용 되돌림
+git restore --staged 파일이름 : 스테이지에서 작업트리로 내린다.
+git reset HEAD^ : 커밋된 최근 버전을 언스테이징한다.
+git reset --hard 해시 : 해시를 이용해 되돌리고싶은 버전으로 리셋(위험 전버전 삭제됨)
+
+8. branch
+git branch
+git branch 브랜치명
+git switch 브랜치명
+git merge 브랜치명(반드시 병합하고자 하는 메인영역, master branch에서 작업) 
+git branch -d 브랜치명
+git branch -D 브랜치명
+=> -d : 병합된 브랜치 지우기 / -D : 병합되지 않은 브랜치 지우기
+cf) git log --oneline : 커밋된 결과를 간소화 시켜 한줄에 보여줌
+
+9. 원격 작업
+github에 레포지토리 만들기
+레포지토리 주소 복사하기
+git remote add origin 레포지토리주소
+=> git remote -v 연동 제대로 됬는지 확인용
+git push origin master => 최초 한번만 그뒤로 git push만해줘도됨
+git pull origin master => 최초 한번만 그뒤로 git pull
+git clone 원격주소 사용할 디렉토리이름 => 디렉토리 생성후 내려받기
+git clone 원격주소 => 미리 작업디렉토리 생성후 내려받기
+
+깃헙에서 setting에서 page에서 branch 에서 배포
+
+
+
+
+
