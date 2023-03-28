@@ -897,26 +897,42 @@ img {
 .all_tab label {
   float: left;
   font-size: 0.9rem;
+  border-left: 1px solid #ccc;
+  padding: 0 5px;
+  color: #999;
+  cursor: pointer;
 }
 
-.all_tab label:first-child:before {
-  display: none;
-}
-
-.all_tab label::before {
-  content: "";
-  display: block;
-  float: left;
-  width: 1px;
-  height: 20px;
-  color: #000;
-  margin: 0 5px;
-  background-color: #000;
+.all_tab label:first-child {
+  border: none;
 }
 
 .all_select {
-  float: right;
+  text-align: right;
   margin-right: 5px;
+}
+
+.all_sheet {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.all_eve,
+.all_coff,
+.all_drink,
+.all_eve {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.all_box {
+  width: calc(100% - 50%);
+  height: 240px;
+  padding: 0 4px;
+}
+.all_box .product_img img{height: 160px;}
+.all_box .pa {
+  letter-spacing: -0.4px;
 }
 
 #every,
@@ -924,6 +940,20 @@ img {
 #all_tea,
 #all_cake {
   display: none;
+}
+
+#every:checked~.all .all_tab .eve,
+#all_coffee:checked~.all .all_tab .ac,
+#all_tea:checked~.all .all_tab .at,
+#all_cake:checked~.all .all_tab .ae {
+  color: #000;
+  font-weight: bold;
+}
+
+#every:checked~.all .all_sheet .all_eve,
+#all_coffee:checked~.all .all_sheet .all_coff,
+#all_tea:checked~.all .all_sheet .all_drink {
+  display: flex;
 }
 
 @media (min-width:601px) {
