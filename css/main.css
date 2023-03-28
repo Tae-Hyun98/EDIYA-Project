@@ -535,7 +535,7 @@ img {
   -webkit-box-orient: vertical;
   padding-top: 5px;
   height: 45px;
-  line-height: 12px;
+  line-height: 14px;
   font-size: 0.8rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -804,6 +804,7 @@ img {
 /***********review*************/
 .review {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .review_box {
@@ -834,10 +835,48 @@ img {
 
 .review_comment .pa {
   padding-top: 0;
-  height: auto;
-  font-size: 1rem;
-  line-height: 20px;
+  height: 54px;
+  font-size: 0.9rem;
+  line-height: 18px;
   letter-spacing: -0.3px;
+}
+
+.review_comment .prod {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  height: 45px;
+}
+
+.review_slide .slick-arrow {
+  position: absolute;
+  left: 10%;
+  top: -1px;
+  transform: translateY(-155%);
+  z-index: 10;
+  font-size: 0;
+  visibility: hidden;
+  color: black;
+}
+
+.review_slide .slick-next {
+  left: auto;
+  right: 10%;
+}
+
+.review_slide .slick-prev::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  visibility: visible;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.review_slide .slick-next::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  visibility: visible;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media (min-width:601px) {
