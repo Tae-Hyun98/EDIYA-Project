@@ -474,7 +474,7 @@ img {
 }
 
 .rec {
-  height: 220px;
+  height: 230px;
   overflow: hidden;
   transition: all 0.3s;
   /* display: flex;
@@ -485,7 +485,7 @@ img {
 
 .rec_box {
   width: calc(100% - 66.6667% - 2.7px);
-  height: 220px;
+  height: 230px;
   margin-right: 4px;
   float: left;
   overflow: hidden;
@@ -616,7 +616,6 @@ img {
   display: none;
 }
 
-
 #more_chk3:checked~.sheet .sa_op {
   display: none;
 }
@@ -637,7 +636,6 @@ img {
   display: none;
 }
 
-
 #more_chk6:checked~.sheet .sp_op {
   display: none;
 }
@@ -657,7 +655,6 @@ img {
 #more_chk8:checked~.sheet .sp_plus1 {
   display: none;
 }
-
 
 #more_chk9:checked~.sheet .an_op {
   display: none;
@@ -683,21 +680,21 @@ img {
 #more_chk3:checked~.sheet .rec_sad,
 #more_chk6:checked~.sheet .rec_spirit,
 #more_chk9:checked~.sheet .rec_angry {
-  height: 440px;
+  height: 460px;
 }
 
 #more_chk1:checked~.sheet .rec_happy,
 #more_chk4:checked~.sheet .rec_sad,
 #more_chk7:checked~.sheet .rec_spirit,
 #more_chk10:checked~.sheet .rec_angry {
-  height: 660px;
+  height: 690px;
 }
 
 #more_chk2:checked~.sheet .rec_happy,
 #more_chk5:checked~.sheet .rec_sad,
 #more_chk8:checked~.sheet .rec_spirit,
 #more_chk11:checked~.sheet .rec_angry {
-  height: 880px;
+  height: 920px;
 }
 
 .middle_banner {
@@ -709,7 +706,6 @@ img {
   width: 100%;
   height: 130px;
 }
-
 
 
 /***************new***************/
