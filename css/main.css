@@ -807,13 +807,10 @@ img {
 }
 
 .review_box {
-  border: 1px solid black;
-  margin-right: 5px;
+  padding: 0 3px;
 }
 
-.review_slide div:nth-child(2) .review_box {
-  margin-right: 0;
-}
+
 
 .review_img img {
   width: 100%;
@@ -822,6 +819,7 @@ img {
 
 .review_comment {
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
 .nick {
