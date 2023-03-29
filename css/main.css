@@ -616,7 +616,6 @@ img {
   display: none;
 }
 
-
 #more_chk3:checked~.sheet .sa_op {
   display: none;
 }
@@ -637,7 +636,6 @@ img {
   display: none;
 }
 
-
 #more_chk6:checked~.sheet .sp_op {
   display: none;
 }
@@ -657,7 +655,6 @@ img {
 #more_chk8:checked~.sheet .sp_plus1 {
   display: none;
 }
-
 
 #more_chk9:checked~.sheet .an_op {
   display: none;
@@ -709,7 +706,6 @@ img {
   width: 100%;
   height: 130px;
 }
-
 
 
 /***************new***************/
