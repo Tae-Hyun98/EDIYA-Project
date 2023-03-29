@@ -9,7 +9,6 @@
 }
 
 body {
-  height: 10000px;
   font-size: 14px;
   font-family: '노토산스', 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', sans-serif;
 }
@@ -27,8 +26,30 @@ img {
   display: block;
 }
 
-/***********header**************/
+.blog i,
+.insta i,
+.face i,
+.youtube i {
+  color: white;
+}
 
+.face {
+  background-color: #1877f2;
+}
+
+.blog {
+  background-color: green;
+}
+
+.insta {
+  background: url(../img/insta.png) no-repeat center;
+}
+
+.youtube {
+  background-color: red;
+}
+
+/***********header**************/
 .header {
   background-color: #fff;
 }
@@ -878,7 +899,7 @@ img {
 
 /**************all****************/
 
-.all {
+.all_product {
   overflow: hidden;
 }
 
@@ -941,19 +962,61 @@ img {
   display: none;
 }
 
-#every:checked~.all .all_tab .eve,
-#all_coffee:checked~.all .all_tab .ac,
-#all_tea:checked~.all .all_tab .at,
-#all_cake:checked~.all .all_tab .ae {
+#every:checked~.all_product .all_tab .eve,
+#all_coffee:checked~.all_product .all_tab .ac,
+#all_tea:checked~.all_product .all_tab .at,
+#all_cake:checked~.allproduct .all_tab .ae {
   color: #000;
   font-weight: bold;
 }
 
-#every:checked~.all .all_sheet .all_eve,
-#all_coffee:checked~.all .all_sheet .all_coff,
-#all_tea:checked~.all .all_sheet .all_drink,
-#all_cake:checked~.all .all_sheet .all_desert {
+#every:checked~.all_product .all_sheet .all_eve,
+#all_coffee:checked~.all_product .all_sheet .all_coff,
+#all_tea:checked~.all_product .all_sheet .all_drink,
+#all_cake:checked~.all_product .all_sheet .all_desert {
   display: flex;
+}
+
+.bottom_sns {
+  height: 50px;
+  line-height: 50px;
+}
+
+.bottom_sns .sns {
+  overflow: hidden;
+  text-align: center;
+}
+
+.bottom_sns .sns li {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.bottom_sns .sns li:last-child {
+  margin-right: 0;
+}
+
+.bottom_sns .sns li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: black;
+  padding: 0px;
+}
+
+.bottom_sns .sns li a i {
+  font-size: 1rem;
+}
+
+/**************footer**************/
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 10px;
 }
 
 @media (min-width:601px) {
@@ -1042,16 +1105,18 @@ img {
     display: none;
   }
 
-
   .header .logo h1 a {
     font-size: 2.6rem;
     line-height: 120px;
   }
 
-
   .header .header_inner {
     position: relative;
     width: 100%;
+  }
+
+  .bottom_sns {
+    display: none;
   }
 
   .gnb {
@@ -1090,7 +1155,7 @@ img {
     border: 1px solid black;
     border-radius: 50%;
     margin-right: 10px;
-    width: 25px;
+    text-align: center;
   }
 
   .sns li:last-child {
@@ -1098,16 +1163,16 @@ img {
   }
 
   .gnb .sns li a {
+    display: block;
     width: 25px;
     height: 25px;
     color: black;
     padding: 0px;
-    text-align: center;
     line-height: 25px;
   }
 
   .gnb .sns li a i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .lnb_pc {
