@@ -1141,6 +1141,31 @@ img {
   .middle_banner img {
     height: 180px;
   }
+
+  .new_box {
+    width: calc(100% - 66.6667% - 3.4px);
+    height: 285px;
+  }
+
+  .new .rec {
+    height: 570px;
+  }
+
+  .new .product_img img {
+    height: 210px;
+  }
+
+  #new_more:checked~.new .rec {
+    height: 855px;
+  }
+
+  #new_more1:checked~.new .rec {
+    height: 1140px;
+  }
+
+  #new_more2:checked~.new .rec {
+    height: 1425px;
+  }
 }
 
 @media (min-width:769px) {
