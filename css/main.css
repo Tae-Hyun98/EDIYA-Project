@@ -1003,15 +1003,15 @@ img {
 
 .bottom_sns .sns li a {
   display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   color: black;
   padding: 0px;
 }
 
 .bottom_sns .sns li a i {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /**************footer**************/
@@ -1066,6 +1066,10 @@ img {
   color: #868686;
 }
 
+.footer_left p:last-child {
+  padding: 15px 0;
+}
+
 @media (min-width:601px) {
   .best_box {
     padding: 5px;
@@ -1089,7 +1093,7 @@ img {
   }
 
   .rec_box {
-    width: calc(100% - 66.6667% - 3.33px);
+    width: calc(100% - 66.6667% - 3.4px);
     height: 310px;
     margin-right: 5px;
   }
@@ -1128,6 +1132,14 @@ img {
     font-size: 1rem;
     height: 50px;
     line-height: 50px;
+  }
+
+  .visual img {
+    height: 240px;
+  }
+
+  .middle_banner img {
+    height: 180px;
   }
 }
 
