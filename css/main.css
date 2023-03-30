@@ -69,7 +69,7 @@ label {
 }
 
 .header .logo h1 a {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: #173C86;
   line-height: 60px;
 }
@@ -78,7 +78,7 @@ label {
   position: absolute;
   left: 25px;
   line-height: 60px;
-  top: 0;
+  top: 6px;
 }
 
 .header .menu label {
@@ -87,7 +87,7 @@ label {
 }
 
 .header .menu label i {
-  font-size: 28px;
+  font-size: 1.8rem;
 }
 
 .gnb {
@@ -343,7 +343,7 @@ label {
 
 .visual img {
   width: 100%;
-  height: 220px;
+  height: 240px;
 }
 
 .visual .visual_banner .slick-dots {
@@ -763,12 +763,12 @@ label {
 
 .new .rec {
   padding: 0 5px;
-  height: 480px;
+  height: 520px;
 }
 
 .new_box {
   width: calc(100% - 50% - 2.5px);
-  height: 240px;
+  height: 260px;
   margin-right: 5px;
   float: left;
   overflow: hidden;
@@ -784,7 +784,7 @@ label {
 
 .mw {
   display: inline-block;
-  width: 100px;
+  width: 110px;
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -832,15 +832,15 @@ label {
 }
 
 #new_more:checked~.new .rec {
-  height: 720px;
+  height: 780px;
 }
 
 #new_more1:checked~.new .rec {
-  height: 960px;
+  height: 1040px;
 }
 
 #new_more2:checked~.new .rec {
-  height: 1200px;
+  height: 1300px;
 }
 
 
@@ -957,7 +957,7 @@ label {
 
 .all_sheet {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .all_eve,
@@ -1117,6 +1117,10 @@ label {
   margin-bottom: 7px;
 }
 
+.quick .dis {
+  display: none;
+}
+
 
 
 @media (min-width:601px) {
@@ -1202,7 +1206,7 @@ label {
   }
 
   .visual img {
-    height: 250px;
+    height: 270px;
   }
 
   .middle_banner img {
@@ -1248,6 +1252,10 @@ label {
     margin-right: 5px;
   }
 
+  .review_comment .prod {
+    font-size: 0.8rem;
+  }
+
   .all_box {
     width: calc(100% - 66.6667%);
     height: 290px;
@@ -1260,6 +1268,10 @@ label {
 
   .all_box .pa {
     height: 55px;
+  }
+
+  .all_tab label {
+    font-size: 1rem;
   }
 
   .search_box {
@@ -1294,8 +1306,31 @@ label {
 
   #array {
     width: 160px;
-    height: 21px;
+    height: 24px;
     text-align: center;
+  }
+
+  .quick .dis {
+    display: block;
+  }
+
+  .quick a {
+    border-radius: 0;
+    font-size: 0.65rem;
+    width: 55px;
+    height: 50px;
+    line-height: 20px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .quick .up {
+    line-height: 25px;
+    height: 30px;
+  }
+
+  .quick a i {
+    font-size: 1.2rem;
   }
 }
 
@@ -1313,7 +1348,8 @@ label {
   }
 
   .all_box {
-    height: 340px;
+    width: calc(100% - 75%);
+    height: 320px;
   }
 
   .all_box .product_img:hover img {
@@ -1321,7 +1357,7 @@ label {
   }
 
   .all_box .product_img img {
-    height: 250px;
+    height: 230px;
   }
 
   .all_box .pa {
@@ -1601,6 +1637,10 @@ label {
     height: 340px;
   }
 
+  .review_comment .prod {
+    font-size: 1rem;
+  }
+
   .label {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -1695,11 +1735,12 @@ label {
   }
 
   .all_box {
-    width: calc(100% - 75%);
+    width: calc(100% - 80%);
+    height: 300px;
   }
 
   .all_box .product_img img {
-    height: 260px;
+    height: 200px;
   }
 
   .all_tab label {
@@ -1764,6 +1805,21 @@ label {
 
   .footer_right ul li:nth-child(2) {
     font-size: 1.7rem;
+  }
+
+  .quick .blind {
+    display: none;
+  }
+
+  .quick .up {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .quick .up i {
+    font-size: 1.8rem;
   }
 
   /* .menu_list .lnb {

@@ -192,8 +192,8 @@
         <picture>
           <source media="(min-width:1170px)" srcset="./img/visual_banner.jpg">
           <source media="(min-width:601px)" srcset="./img/visual_banner.jpg">
-          <source media="(min-width:321px)" srcset="./img/visual_banner_m.jpg">
-          <img src="./img/visual_banner_m.jpg" alt="이미지" style="width:100%">
+          <source media="(min-width:321px)" srcset="./img/visual_banner_mobile1.jpg">
+          <img src="./img/visual_banner_mobile1.jpg" alt="이미지" style="width:100%">
         </picture>
       </div>
       <div>
@@ -262,10 +262,21 @@
             <div class="best_box">
               <a href="#!">
                 <div class="product_img">
-                  <img src="./img/all3.jpg" alt="product1">
+                  <img src="./img/all3_mobile.jpg" alt="product1">
                 </div>
                 <p class="pa"><span class="bold">[이디야]</span> 스무디 1,000ml 딸기&바나나 x 6개입</p>
                 <p><span class="won">31,500원</span></p>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="best_box">
+              <a href="#!">
+                <div class="product_img">
+                  <img src="./img/all29.jpg" alt="product1">
+                </div>
+                <p class="pa"><span class="bold">[이디야]</span> 블렌딩 티백 선물세트(티백4T x 6개)</p>
+                <p><span class="won">25,900원</span></p>
               </a>
             </div>
           </div>
@@ -772,6 +783,24 @@
           <div class="new_box">
             <a href="#!">
               <div class="product_img">
+                <img src="./img/recommand1.jpg" alt="recommand1">
+              </div>
+              <p class="pa"><span class="bold">[이디야]</span> 블렌딩티 루이보스 옐로우 플라워 10T x 4개</p>
+              <p><span class="won">21,500원</span></p>
+            </a>
+          </div>
+          <div class="new_box">
+            <a href="#!">
+              <div class="product_img">
+                <img src="./img/all23.jpg" alt="product1">
+              </div>
+              <p class="pa"><span class="bold">[이디야]</span> 블렌딩티 그레이프 엘더베리 10T x 4개</p>
+              <p><span class="won">21,500원</span></p>
+            </a>
+          </div>
+          <div class="new_box">
+            <a href="#!">
+              <div class="product_img">
                 <img src="./img/all14.jpg" alt="product1">
               </div>
               <p class="pa"><span class="bold">[이디야]</span> 비니스트 디카페인 아메리카노 130T</p>
@@ -790,19 +819,19 @@
           <div class="new_box">
             <a href="#!">
               <div class="product_img">
-                <img src="./img/all11.jpg" alt="product1">
+                <img src="./img/img5.jpg" alt="product1">
               </div>
-              <p class="pa"><span class="bold">[이디야]</span> 딸기 듬뿍 라떼 ICED (R)</p>
-              <p><span class="won">6,900원</span></p>
+              <p class="pa"><span class="bold">[이디야]</span> 홀빈커피 콜롬비아 슈프리모</p>
+              <p><span class="won">24,000원</span></p>
             </a>
           </div>
           <div class="new_box">
             <a href="#!">
               <div class="product_img">
-                <img src="./img/img5.jpg" alt="product1">
+                <img src="./img/all10.jpg" alt="product1">
               </div>
-              <p class="pa"><span class="bold">[이디야]</span> 홀빈커피 콜롬비아 슈프리모</p>
-              <p><span class="won">24,000원</span></p>
+              <p class="pa"><span class="bold">[이디야]</span> 생딸기 블루밍 그린티 ICED (EX)</p>
+              <p><span class="won">4,600원</span></p>
             </a>
           </div>
           <div class="new_box">
@@ -922,6 +951,19 @@
               <p class="nick">spaoi*** | 2021. 07. 26.</p>
               <hr />
               <p class="prod">[이디야] 콤부차 애플베리 20T+보틀</p>
+            </div>
+          </div>
+          <div class="review_box">
+            <div class="review_img">
+              <img src="./img/review_img4.jpeg" alt="review">
+            </div>
+            <div class="review_comment">
+              <div class="pa_box">
+                <p class="pa">적당히 달고 맛있어요! 자주 사먹을게요~</p>
+              </div>
+              <p class="nick">mika**** | 2023. 03. 14.</p>
+              <hr />
+              <p class="prod">[이디야] 연유카페라떼 ICED (L)</p>
             </div>
           </div>
         </div>
@@ -1356,11 +1398,18 @@
 
   <div class="quick">
     <div class="quick_ab">
-      <a href="#!"><i class="fas fa-shopping-cart"></i></a>
-      <a href="#!"><i class="far fa-eye"></i></a>
-      <a href="#top"><i class="fas fa-chevron-up"></i></a>
+      <a href="#!" class="blind">
+        <i class="fas fa-shopping-cart"></i>
+        <p class="dis">장바구니</p>
+      </a>
+      <a href="#!" class="blind">
+        <i class="far fa-eye"></i>
+        <p class="dis">최근본상품</p>
+      </a>
+      <a href="#top" class="up"><i class="fas fa-chevron-up"></i></a>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
