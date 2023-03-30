@@ -1314,6 +1314,11 @@ label {
     display: block;
   }
 
+  .quick {
+    bottom: 30px;
+    right: 5px;
+  }
+
   .quick a {
     border-radius: 0;
     font-size: 0.65rem;
@@ -1564,7 +1569,7 @@ label {
   }
 
   .visual_banner img {
-    height: 350px;
+    height: 380px;
   }
 
   .visual_banner .slick-prev::before {
@@ -1588,8 +1593,8 @@ label {
   }
 
   .visual .visual_banner .slick-dots li button {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
   }
 
   .visual .visual_banner .slick-dots {
