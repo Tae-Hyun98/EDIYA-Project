@@ -18,6 +18,7 @@
   <input type="checkbox" id="tea_chk">
   <input type="checkbox" id="gift_chk">
   <input type="checkbox" id="comu_chk">
+  <div id="top"></div>
   <div class="fix">
     <header class="header">
       <div class="header_inner">
@@ -48,56 +49,56 @@
 
         <div class="search_box">
           <i class="fas fa-search"></i>
-          <input type="search">
+          <input type="search" placeholder="검색어를 입력해주세요.">
         </div>
       </div>
     </header>
     <div class="lnb_pc">
       <div class="lnb_inner">
-        <ul>
+        <ul class="lnb_main">
           <li><a href="#">베스트</a></li>
           <li>
             <a href="#">커피</a>
             <ul class="coffee_pc down">
-              <li><a href="#">홀빈원두</a></li>
-              <li><a href="#">핸드드립</a></li>
-              <li><a href="#">캡슐커피</a></li>
-              <li><a href="#">커피머신</a></li>
+              <li><a href="#!">홀빈원두</a></li>
+              <li><a href="#!">핸드드립</a></li>
+              <li><a href="#!">캡슐커피</a></li>
+              <li><a href="#!">커피머신</a></li>
             </ul>
           </li>
           <li>
             <a href="#">스틱커피</a>
             <ul class="stick_pc down">
-              <li><a href="#">아메리카노</a></li>
-              <li><a href="#">라떼</a></li>
-              <li><a href="#">커피믹스</a></li>
+              <li><a href="#!">아메리카노</a></li>
+              <li><a href="#!">라떼</a></li>
+              <li><a href="#!">커피믹스</a></li>
             </ul>
           </li>
           <li>
             <a href="#">음료·티</a>
             <ul class="tea_pc down">
-              <li><a href="#">아이스음료</a></li>
-              <li><a href="#">콤부차</a></li>
-              <li><a href="#">전통차</a></li>
-              <li><a href="#">블렌딩티</a></li>
-              <li><a href="#">컵커피</a></li>
+              <li><a href="#!">아이스음료</a></li>
+              <li><a href="#!">콤부차</a></li>
+              <li><a href="#!">전통차</a></li>
+              <li><a href="#!">블렌딩티</a></li>
+              <li><a href="#!">컵커피</a></li>
             </ul>
           </li>
-          <li><a href="#">케이크</a></li>
+          <li><a href="#!">케이크</a></li>
           <li>
-            <a href="#">선물세트</a>
+            <a href="#!">선물세트</a>
             <ul class="gift_pc down">
-              <li><a href="#">커피</a></li>
-              <li><a href="#">음료 · 티</a></li>
-              <li><a href="#">커피믹스</a></li>
+              <li><a href="#!">커피</a></li>
+              <li><a href="#!">음료 · 티</a></li>
+              <li><a href="#!">커피믹스</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">커뮤니티</a>
+            <a href="#!">커뮤니티</a>
             <ul class="comu_pc down">
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">EVENT</a></li>
-              <li><a href="#">Q & A</a></li>
+              <li><a href="#!">공지사항</a></li>
+              <li><a href="#!">EVENT</a></li>
+              <li><a href="#!">Q & A</a></li>
             </ul>
           </li>
         </ul>
@@ -108,10 +109,10 @@
   <div class="menu_list">
     <ul class="lnb">
       <div class="login">
-        <p><a href="#">로그인</a></p>
-        <p><a href="#">회원가입</a></p>
-        <p class="wide"><a href="#">장바구니</a></p>
-        <p class="wide"><a href="#">최근본상품</a></p>
+        <p><a href="#!">로그인</a></p>
+        <p><a href="#!">회원가입</a></p>
+        <p class="wide"><a href="#!">장바구니</a></p>
+        <p class="wide"><a href="#!">최근본상품</a></p>
         <p class="sns wide"><a href="#"><i class="fas fa-blog"></i></a></p>
         <p class="sns wide"><a href="#"><i class="fab fa-instagram"></i></a></p>
         <p class="sns wide"><a href="#"><i class="fab fa-facebook-f"></i></a></p>
@@ -316,10 +317,10 @@
       <section class="recommand">
         <h1>추천 상품</h1>
         <div class="label">
-          <label for="tab1" class="hap">기분좋을때</label>
-          <label for="tab2" class="sa">우울할때</label>
-          <label for="tab3" class="sp">무기력할때</label>
-          <label for="tab4" class="ang">화가날때</label>
+          <label for="tab1" class="hap"><span class="hash">#</span>데일리</label>
+          <label for="tab2" class="sa"><span class="hash">#</span>기분전환</label>
+          <label for="tab3" class="sp"><span class="hash">#</span>선물</label>
+          <label for="tab4" class="ang"><span class="hash">#</span>힐링</label>
         </div>
         <input type="checkbox" id="more_chk">
         <input type="checkbox" id="more_chk1">
@@ -1320,13 +1321,21 @@
     </div>
   </footer>
 
+  <div class="quick">
+    <div class="quick_ab">
+      <a href="#!"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#!"><i class="far fa-eye"></i></a>
+      <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.visual_banner').slick({
-        dots: true
-        //autoplay: true
+        dots: true,
+        infinite: true,
+        autoplay: true
       });
     });
 
