@@ -10,7 +10,7 @@
 
 body {
   font-size: 14px;
-  font-family: '노토산스', 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', sans-serif;
+  font-family: '노토산스', 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', '돋움', 'Dotum''굴림', 'Gulim', sans-serif;
 }
 
 li {
@@ -1480,6 +1480,7 @@ label {
     font-size: 1.2rem;
     background-color: #fff;
     z-index: 1;
+
   }
 
   .lnb_pc ul li a:hover {
@@ -2003,6 +2004,22 @@ label {
   .new .rec div.new_box:nth-child(8),
   .new .rec div.new_box:nth-child(12) {
     margin-right: 0;
+  }
+
+  .all_box {
+    width: 246.8px;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .all_box:nth-child(5),
+  .all_box:nth-child(10),
+  .all_box:nth-child(15) {
+    margin-right: 0;
+  }
+
+  .all_box .product_img img {
+    height: 220px;
   }
 
   .footer_inner {
