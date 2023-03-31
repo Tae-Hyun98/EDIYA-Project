@@ -10,7 +10,7 @@
 
 body {
   font-size: 14px;
-  font-family: '노토산스', 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', '돋움', 'Dotum''굴림', 'Gulim', sans-serif;
+  font-family: '노토산스', 'Noto Sans KR', '나눔고딕', 'Nanum Gothic', '돋움', 'Dotum', '굴림', 'Gulim', sans-serif;
 }
 
 li {
@@ -343,7 +343,7 @@ label {
 
 .visual img {
   width: 100%;
-  height: 240px;
+  height: 170px;
 }
 
 .visual .visual_banner .slick-dots {
@@ -422,12 +422,12 @@ label {
 }
 
 .best {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .best_box {
   width: 100%;
-  height: 245px;
+  height: auto;
   padding: 5px 3px;
 }
 
@@ -451,6 +451,7 @@ label {
 }
 
 .won {
+  font-size: 1.1rem;
   color: #008BCC;
   font-weight: bold;
 }
@@ -801,7 +802,8 @@ label {
 .new .rec div.new_box:nth-child(4),
 .new .rec div.new_box:nth-child(6),
 .new .rec div.new_box:nth-child(8),
-.new .rec div.new_box:nth-child(10) {
+.new .rec div.new_box:nth-child(10),
+.new .rec div.new_box:nth-child(12) {
   margin-right: 0;
 }
 
@@ -824,7 +826,7 @@ label {
 }
 
 #new_more1:checked~.new .nw3 {
-  display: inline-block;
+  display: none;
 }
 
 #new_more2:checked~.new .nw3 {
@@ -832,16 +834,16 @@ label {
 }
 
 #new_more:checked~.new .rec {
-  height: 780px;
-}
-
-#new_more1:checked~.new .rec {
   height: 1040px;
 }
 
-#new_more2:checked~.new .rec {
-  height: 1300px;
+#new_more1:checked~.new .rec {
+  height: 1560px;
 }
+
+/* #new_more2:checked~.new .rec {
+  height: 1300px;
+} */
 
 
 /***********review*************/
@@ -851,7 +853,9 @@ label {
 }
 
 .review_box {
-  padding: 0 3px;
+  margin: 0 3px;
+  height: 427px;
+  border: 1px solid #ccc;
 }
 
 .review_img img {
@@ -860,8 +864,7 @@ label {
 }
 
 .review_comment {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 5px;
 }
 
 .nick {
@@ -876,18 +879,30 @@ label {
   padding-bottom: 5px;
 }
 
+.rating {
+  padding-bottom: 5px;
+}
+
+.rating p {
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 20px;
+  line-height: 20px;
+  color: #008BCC;
+}
+
 .review_comment .pa {
   padding-top: 0;
-  height: 54px;
+  height: 108px;
   font-size: 0.9rem;
   line-height: 17px;
-  letter-spacing: -0.3px;
+  letter-spacing: 0;
+  -webkit-line-clamp: 9999;
 }
 
 .review_comment .prod {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding-top: 5px;
-  height: 45px;
 }
 
 .review_slide .slick-arrow {
@@ -1138,7 +1153,6 @@ label {
 
   .best_box {
     padding: 5px;
-    height: 300px;
   }
 
   .best_box .pa {
@@ -1348,17 +1362,15 @@ label {
     left: -1069px;
   }
 
-  .rec_box .product_img:hover img {
+  .rec_box .product_img:hover img,
+  .new_box .product_img:hover img,
+  .all_box .product_img:hover img {
     scale: 1.1;
   }
 
   .all_box {
     width: calc(100% - 75%);
     height: 320px;
-  }
-
-  .all_box .product_img:hover img {
-    scale: 1.1;
   }
 
   .all_box .product_img img {
@@ -1371,6 +1383,15 @@ label {
 
   .middle_banner img {
     height: 230px;
+  }
+
+  .review_comment .prod {
+    font-size: 1rem;
+  }
+
+  .review_comment .pa {
+    height: 100px;
+    font-size: 1rem;
   }
 }
 
@@ -1386,7 +1407,7 @@ label {
   }
 
   .header .logo h1 a {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     line-height: 115px;
   }
 
@@ -1647,13 +1668,18 @@ label {
     font-size: 1rem;
   }
 
+  .hash {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   .label {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
 
   .label label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     height: 60px;
     line-height: 60px;
     background-color: white;
@@ -2004,6 +2030,30 @@ label {
   .new .rec div.new_box:nth-child(8),
   .new .rec div.new_box:nth-child(12) {
     margin-right: 0;
+  }
+
+  .new .rec {
+    padding: 0;
+  }
+
+  .new .rec div.new_box {
+    width: 311px;
+    margin-right: 10px;
+  }
+
+  .sheet div div:nth-child(3),
+  .sheet div div:nth-child(6),
+  .sheet div div:nth-child(9),
+  .sheet div div:nth-child(12),
+  .new .rec div.new_box:nth-child(3),
+  .new .rec div.new_box:nth-child(6),
+  .new .rec div.new_box:nth-child(9) {
+    margin-right: 10px;
+  }
+
+  .new .rec div.new_box:nth-child(2),
+  .new .rec div.new_box:nth-child(10) {
+    margin-right: 10px;
   }
 
   .all_box {
