@@ -422,6 +422,7 @@ label {
 .eb_letter {
   float: left;
   width: 90%;
+  padding: 0 0 5px 5px;
 }
 
 .eb_letter p {
@@ -456,6 +457,27 @@ label {
   background-color: #898989;
 }
 
+
+/************pagenation*************/
+.pagenation {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagenation ul li {
+  display: inline-block;
+}
+
+.pagenation ul li:nth-child(2) a {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.pagenation ul li a {
+  display: block;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+}
 
 /**************footer**************/
 .footer {
@@ -580,6 +602,14 @@ label {
 
   .eb_letter {
     height: 74px;
+  }
+
+  #array {
+    width: 80px;
+  }
+
+  #event_input {
+    width: 230px;
   }
 }
 
@@ -794,6 +824,22 @@ label {
     left: auto;
     top: 18px;
     cursor: pointer;
+  }
+
+  .event_box {
+    width: calc(100% - 66.6667% - 6.7px);
+  }
+
+  .event_box:nth-child(2),
+  .event_box:nth-child(4),
+  .event_box:nth-child(8) {
+    margin-right: 10px;
+  }
+
+  .event_box:nth-child(3),
+  .event_box:nth-child(6),
+  .event_box:nth-child(9) {
+    margin-right: 0;
   }
 
   .footer {
