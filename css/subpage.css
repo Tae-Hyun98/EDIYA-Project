@@ -492,6 +492,36 @@ label {
   font-size: 1.1rem;
 }
 
+/***********quick************/
+.quick {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  margin-right: 5px;
+  z-index: 999;
+}
+
+.quick a {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  line-height: 45px;
+  background-color: #fff;
+  margin-bottom: 7px;
+}
+
+.quick .dis {
+  display: none;
+}
+
+.quick .blind {
+  display: none;
+}
+
 /**************footer**************/
 .footer {
   margin-top: 30px;
@@ -641,6 +671,35 @@ label {
   .location p a {
     font-size: 1rem;
   }
+
+  .quick .dis {
+    display: block;
+  }
+
+  .quick {
+    bottom: 30px;
+    right: 5px;
+  }
+
+  .quick a {
+    border-radius: 0;
+    font-size: 0.65rem;
+    width: 55px;
+    height: 50px;
+    line-height: 20px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .quick .up {
+    line-height: 25px;
+    height: 30px;
+  }
+
+  .quick a i {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media (min-width:769px) {
@@ -890,6 +949,21 @@ label {
 
   #event_input {
     width: 300px;
+  }
+
+  .quick .blind {
+    display: none;
+  }
+
+  .quick .up {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .quick .up i {
+    font-size: 1.8rem;
   }
 
   .footer {

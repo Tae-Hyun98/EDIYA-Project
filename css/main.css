@@ -53,6 +53,54 @@ label {
   cursor: pointer;
 }
 
+/************popup*****************/
+.popup {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  width: 70%;
+  z-index: 10000;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.popup_img img {
+  width: 100%;
+  height: 350px;
+}
+
+.popup_close {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.popup_close p {
+  float: left;
+  cursor: pointer;
+}
+
+.popup_close p i {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.popup_close label {
+  float: right;
+}
+
+#popup_chk {
+  display: none;
+}
+
+#popup_chk~.popup {
+  display: block;
+}
+
+#popup_chk:checked~.popup {
+  display: none;
+}
+
 /***********header**************/
 .fix {
   position: sticky;
@@ -343,7 +391,7 @@ label {
 
 .visual img {
   width: 100%;
-  height: 170px;
+  height: 200px;
 }
 
 .visual .visual_banner .slick-dots {
@@ -451,7 +499,7 @@ label {
 }
 
 .won {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #008BCC;
   font-weight: bold;
 }
@@ -604,7 +652,7 @@ label {
 
 #tab1~.recommand .sheet .happy,
 #tab2~.recommand .sheet .sad,
-#tab3~.recommand .sheet .spirit,
+#tab3~.recommand .sheet .gift_item,
 #tab4~.recommand .sheet .angry {
   display: none;
 }
@@ -620,7 +668,7 @@ label {
 
 #tab1:checked~.recommand .sheet .happy,
 #tab2:checked~.recommand .sheet .sad,
-#tab3:checked~.recommand .sheet .spirit,
+#tab3:checked~.recommand .sheet .gift_item,
 #tab4:checked~.recommand .sheet .angry {
   display: block;
 }
@@ -685,23 +733,23 @@ label {
   display: none;
 }
 
-#more_chk6:checked~.sheet .sp_op {
+#more_chk6:checked~.sheet .gf_op {
   display: none;
 }
 
-#more_chk6:checked~.sheet .sp_plus {
+#more_chk6:checked~.sheet .gf_plus {
   display: inline-block;
 }
 
-#more_chk7:checked~.sheet .sp_plus {
+#more_chk7:checked~.sheet .gf_plus {
   display: none;
 }
 
-#more_chk7:checked~.sheet .sp_plus1 {
+#more_chk7:checked~.sheet .gf_plus1 {
   display: inline-block;
 }
 
-#more_chk8:checked~.sheet .sp_plus1 {
+#more_chk8:checked~.sheet .gf_plus1 {
   display: none;
 }
 
@@ -727,21 +775,21 @@ label {
 
 #more_chk:checked~.sheet .rec_happy,
 #more_chk3:checked~.sheet .rec_sad,
-#more_chk6:checked~.sheet .rec_spirit,
+#more_chk6:checked~.sheet .rec_gift_item,
 #more_chk9:checked~.sheet .rec_angry {
   height: 460px;
 }
 
 #more_chk1:checked~.sheet .rec_happy,
 #more_chk4:checked~.sheet .rec_sad,
-#more_chk7:checked~.sheet .rec_spirit,
+#more_chk7:checked~.sheet .rec_gift_item,
 #more_chk10:checked~.sheet .rec_angry {
   height: 690px;
 }
 
 #more_chk2:checked~.sheet .rec_happy,
 #more_chk5:checked~.sheet .rec_sad,
-#more_chk8:checked~.sheet .rec_spirit,
+#more_chk8:checked~.sheet .rec_gift_item,
 #more_chk11:checked~.sheet .rec_angry {
   height: 920px;
 }
@@ -1139,6 +1187,14 @@ label {
 
 
 @media (min-width:601px) {
+  .popup {
+    width: 400px;
+  }
+
+  .popup_img img {
+    height: 400px;
+  }
+
   .header .logo h1 a {
     font-size: 2.5rem;
   }
@@ -1185,26 +1241,27 @@ label {
 
   #more_chk:checked~.sheet .rec_happy,
   #more_chk3:checked~.sheet .rec_sad,
-  #more_chk6:checked~.sheet .rec_spirit,
+  #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
     height: 620px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
   #more_chk4:checked~.sheet .rec_sad,
-  #more_chk7:checked~.sheet .rec_spirit,
+  #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
     height: 930px;
   }
 
   #more_chk2:checked~.sheet .rec_happy,
   #more_chk5:checked~.sheet .rec_sad,
-  #more_chk8:checked~.sheet .rec_spirit,
+  #more_chk8:checked~.sheet .rec_gift_item,
   #more_chk11:checked~.sheet .rec_angry {
     height: 1240px;
   }
 
   .pa {
+    height: 55px;
     line-height: 16px;
     font-size: 1rem;
   }
@@ -1229,11 +1286,11 @@ label {
 
   .new_box {
     width: calc(100% - 66.6667% - 3.4px);
-    height: 290px;
+    height: 310px;
   }
 
   .new .rec {
-    height: 580px;
+    height: 620px;
   }
 
   .new .product_img img {
@@ -1241,11 +1298,11 @@ label {
   }
 
   #new_more:checked~.new .rec {
-    height: 870px;
+    height: 930px;
   }
 
   #new_more1:checked~.new .rec {
-    height: 1160px;
+    height: 1240px;
   }
 
   #new_more1:checked~.new .nw3 {
@@ -1354,6 +1411,15 @@ label {
 }
 
 @media (min-width:769px) {
+  .popup {
+    width: 400px;
+    left: 5%;
+  }
+
+  .popup_img img {
+    height: 400px;
+  }
+
   .visual img {
     height: 285px;
   }
@@ -1396,6 +1462,10 @@ label {
 }
 
 @media(min-width:1070px) {
+  .popup {
+    left: 15%;
+  }
+
   .fix {
     position: sticky;
     top: 0;
@@ -1716,28 +1786,27 @@ label {
   .sheet div div:nth-child(12),
   .new .rec div.new_box:nth-child(3),
   .new .rec div.new_box:nth-child(6),
-  .new .rec div.new_box:nth-child(9),
-  .new .rec div.new_box:nth-child(12) {
+  .new .rec div.new_box:nth-child(9) {
     margin-right: 5px;
   }
 
   #more_chk:checked~.sheet .rec_happy,
   #more_chk3:checked~.sheet .rec_sad,
-  #more_chk6:checked~.sheet .rec_spirit,
+  #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
     height: 680px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
   #more_chk4:checked~.sheet .rec_sad,
-  #more_chk7:checked~.sheet .rec_spirit,
+  #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
     height: 1020px;
   }
 
   #more_chk1:checked~.sheet .ha_plus1,
   #more_chk4:checked~.sheet .sa_plus1,
-  #more_chk7:checked~.sheet .sp_plus1,
+  #more_chk7:checked~.sheet .gf_plus1,
   #more_chk10:checked~.sheet .an_plus1 {
     display: none;
   }
