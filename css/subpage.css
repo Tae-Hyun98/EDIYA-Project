@@ -363,7 +363,7 @@ label {
 
 .location {
   text-align: right;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
 }
 
 .location p {
@@ -385,6 +385,7 @@ label {
   width: 27%;
   height: 35px;
   margin-right: 2%;
+  padding-left: 10px;
 }
 
 .event_search {
@@ -392,6 +393,7 @@ label {
 }
 
 .event_sel {
+  position: relative;
   text-align: center;
 }
 
@@ -399,13 +401,21 @@ label {
   outline: none;
   width: 70%;
   height: 35px;
+
 }
 
 .event_list {
   padding: 5px;
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
   margin: 0 5px;
+}
+
+.event_sel i {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .event_box {
@@ -603,7 +613,8 @@ label {
   .event_box:nth-child(2),
   .event_box:nth-child(4),
   .event_box:nth-child(6),
-  .event_box:nth-child(8) {
+  .event_box:nth-child(8),
+  .event_box:nth-child(10) {
     margin-right: 0;
   }
 
@@ -611,12 +622,24 @@ label {
     height: 70px;
   }
 
+  .event_sel {
+    text-align: right;
+  }
+
   #array {
-    width: 80px;
+    width: 100px;
   }
 
   #event_input {
     width: 230px;
+  }
+
+  .location p {
+    font-size: 1rem;
+  }
+
+  .location p a {
+    font-size: 1rem;
   }
 }
 
@@ -859,6 +882,14 @@ label {
 
   .event_ment p {
     font-size: 1.2rem;
+  }
+
+  #array {
+    margin-right: 1%;
+  }
+
+  #event_input {
+    width: 300px;
   }
 
   .footer {
