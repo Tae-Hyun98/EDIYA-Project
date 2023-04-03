@@ -400,6 +400,7 @@ label {
 }
 
 .event_list {
+  padding: 5px;
   border-top: 2px solid black;
   margin: 0 5px;
 }
@@ -416,7 +417,6 @@ label {
 
 .eb_img img {
   width: 100%;
-  height: 130px;
 }
 
 .eb_letter {
@@ -593,6 +593,10 @@ label {
     height: 150px;
   }
 
+  .event_ing {
+    margin-top: 10px;
+  }
+
   .event_box:nth-child(2),
   .event_box:nth-child(4),
   .event_box:nth-child(6),
@@ -601,7 +605,7 @@ label {
   }
 
   .eb_letter {
-    height: 74px;
+    height: 70px;
   }
 
   #array {
@@ -826,6 +830,10 @@ label {
     cursor: pointer;
   }
 
+  .event_ment h1 {
+    font-size: 3rem;
+  }
+
   .event_box {
     width: calc(100% - 66.6667% - 6.7px);
   }
@@ -840,6 +848,14 @@ label {
   .event_box:nth-child(6),
   .event_box:nth-child(9) {
     margin-right: 0;
+  }
+
+  .eb_img img {
+    height: 150px;
+  }
+
+  .event_ment p {
+    font-size: 1.2rem;
   }
 
   .footer {
