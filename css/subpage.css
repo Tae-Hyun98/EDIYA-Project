@@ -109,7 +109,6 @@ label {
   background-color: #173C86;
   transition: all 0.5s;
   overflow: hidden;
-  overflow-y: scroll;
   padding-bottom: 10%;
 }
 
@@ -198,7 +197,13 @@ label {
 #stick_chk,
 #tea_chk,
 #gift_chk,
-#comu_chk {
+#comu_chk,
+#menu_ra,
+#drop_ra,
+#stick_ra,
+#tea_ra,
+#gift_ra,
+#comu_ra  {
   display: none;
 }
 
@@ -206,109 +211,110 @@ label {
   left: 0;
 }
 
-#drop_chk:checked~.menu_list .lnb .drop .coffee_list {
+#drop_ra:checked~.menu_list .lnb .drop .coffee_list {
   height: 140px;
 }
 
-#drop_chk:checked~.menu_list .lnb .drop .coffee_list li a {
+#drop_ra:checked~.menu_list .lnb .drop .coffee_list li a {
   opacity: 1;
 }
 
-#drop_chk:checked~.menu_list .lnb .coffee .drop_open {
+#drop_ra:checked~.menu_list .lnb .coffee .drop_open {
   display: none;
 }
 
-#drop_chk:checked~.menu_list .lnb .coffee .drop_close {
+#drop_ra:checked~.menu_list .lnb .coffee .drop_close {
   display: block;
 }
 
-#drop_chk~.menu_list .lnb .coffee .drop_close {
+#drop_ra~.menu_list .lnb .coffee .drop_close {
   display: none;
 }
 
 /* 스틱 */
-#stick_chk:checked~.menu_list .lnb .drop .stick_list {
+#stick_ra:checked~.menu_list .lnb .drop .stick_list {
   height: 105px;
 }
 
-#stick_chk:checked~.menu_list .lnb .drop .stick_list li a {
+#stick_ra:checked~.menu_list .lnb .drop .stick_list li a {
   opacity: 1;
 }
 
-#stick_chk:checked~.menu_list .lnb .stick .drop_open {
+#stick_ra:checked~.menu_list .lnb .stick .drop_open {
   display: none;
 }
 
-#stick_chk:checked~.menu_list .lnb .stick .drop_close {
+#stick_ra:checked~.menu_list .lnb .stick .drop_close {
   display: block;
 }
 
-#stick_chk~.menu_list .lnb .stick .drop_close {
+#stick_ra~.menu_list .lnb .stick .drop_close {
   display: none;
 }
 
 /* 음료티 */
-#tea_chk:checked~.menu_list .lnb .drop .tea_list {
+#tea_ra:checked~.menu_list .lnb .drop .tea_list {
   height: 175px;
 }
 
-#tea_chk:checked~.menu_list .lnb .drop .tea_list li a {
+#tea_ra:checked~.menu_list .lnb .drop .tea_list li a {
   opacity: 1;
 }
 
-#tea_chk:checked~.menu_list .lnb .tea .drop_open {
+#tea_ra:checked~.menu_list .lnb .tea .drop_open {
   display: none;
 }
 
-#tea_chk:checked~.menu_list .lnb .tea .drop_close {
+#tea_ra:checked~.menu_list .lnb .tea .drop_close {
   display: block;
 }
 
-#tea_chk~.menu_list .lnb .tea .drop_close {
+#tea_ra~.menu_list .lnb .tea .drop_close {
   display: none;
 }
 
 /* 선물세트 */
-#gift_chk:checked~.menu_list .lnb .drop .gift_list {
+#gift_ra:checked~.menu_list .lnb .drop .gift_list {
   height: 105px;
 }
 
-#gift_chk:checked~.menu_list .lnb .drop .gift_list li a {
+#gift_ra:checked~.menu_list .lnb .drop .gift_list li a {
   opacity: 1;
 }
 
-#gift_chk:checked~.menu_list .lnb .gift .drop_open {
+#gift_ra:checked~.menu_list .lnb .gift .drop_open {
   display: none;
 }
 
-#gift_chk:checked~.menu_list .lnb .gift .drop_close {
+#gift_ra:checked~.menu_list .lnb .gift .drop_close {
   display: block;
 }
 
-#gift_chk~.menu_list .lnb .gift .drop_close {
+#gift_ra~.menu_list .lnb .gift .drop_close {
   display: none;
 }
 
 /* 커뮤니티 */
-#comu_chk:checked~.menu_list .lnb .drop .comu_list {
+#comu_ra:checked~.menu_list .lnb .drop .comu_list {
   height: 105px;
 }
 
-#comu_chk:checked~.menu_list .lnb .drop .comu_list li a {
+#comu_ra:checked~.menu_list .lnb .drop .comu_list li a {
   opacity: 1;
 }
 
-#comu_chk:checked~.menu_list .lnb .comu .drop_open {
+#comu_ra:checked~.menu_list .lnb .comu .drop_open {
   display: none;
 }
 
-#comu_chk:checked~.menu_list .lnb .comu .drop_close {
+#comu_ra:checked~.menu_list .lnb .comu .drop_close {
   display: block;
 }
 
-#comu_chk~.menu_list .lnb .comu .drop_close {
+#comu_ra~.menu_list .lnb .comu .drop_close {
   display: none;
 }
+
 
 .search_box {
   display: none;
