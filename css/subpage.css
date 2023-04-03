@@ -363,17 +363,18 @@ label {
 
 .location {
   text-align: right;
-  padding-right: 5px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .location p {
   display: inline-block;
   color: #777;
+  font-size: 0.8rem;
 }
 
 .location p a {
   color: #777;
+  font-size: 0.8rem;
 }
 
 .location p i {
@@ -381,27 +382,29 @@ label {
 }
 
 #array {
-  width: 60px;
-  height: 25px;
+  width: 27%;
+  height: 35px;
+  margin-right: 2%;
 }
 
 .event_search {
-  margin-bottom: 15px;
+  padding: 10px;
 }
 
 .event_sel {
-  text-align: right;
-  margin-right: 5px;
+  text-align: center;
 }
 
 #event_input {
   outline: none;
-  height: 25px;
+  width: 70%;
+  height: 35px;
 }
 
 .event_list {
   padding: 5px;
   border-top: 2px solid black;
+  border-bottom: 2px solid black;
   margin: 0 5px;
 }
 
@@ -461,7 +464,7 @@ label {
 /************pagenation*************/
 .pagenation {
   text-align: center;
-  margin-top: 15px;
+  margin: 50px 0;
 }
 
 .pagenation ul li {
