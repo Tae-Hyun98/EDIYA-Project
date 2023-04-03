@@ -156,7 +156,6 @@ label {
   background-color: #173C86;
   transition: all 0.5s;
   overflow: hidden;
-  overflow-y: scroll;
   padding-bottom: 10%;
 }
 
@@ -363,7 +362,6 @@ label {
   display: none;
 }
 
-
 .search_box {
   position: relative;
   padding: 0 20px;
@@ -465,7 +463,7 @@ label {
 
 /**************best******************/
 .content {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .content h1 {
@@ -903,12 +901,12 @@ label {
 /***********review*************/
 .review {
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .review_box {
   margin: 0 3px;
-  height: 4px;
+  height: 435px;
   border: 1px solid #ccc;
 }
 
@@ -947,8 +945,8 @@ label {
 
 .review_comment .pa {
   padding-top: 0;
-  height: 108px;
-  font-size: 0.9rem;
+  height: 110px;
+  font-size: 0.8rem;
   line-height: 17px;
   letter-spacing: 0;
   -webkit-line-clamp: 9999;
@@ -1446,11 +1444,7 @@ label {
   }
 
   .all_box .product_img img {
-    height: 230px;
-  }
-
-  .all_box .pa {
-    height: 45px;
+    height: 220px;
   }
 
   .middle_banner img {
@@ -1704,7 +1698,7 @@ label {
   }
 
   .won {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .best_box {
@@ -1843,11 +1837,7 @@ label {
 
   .all_box {
     width: calc(100% - 80%);
-    height: 300px;
-  }
-
-  .all_box .product_img img {
-    height: 200px;
+    height: 320px;
   }
 
   .all_tab label {
@@ -2141,10 +2131,6 @@ label {
   .all_box:nth-child(10),
   .all_box:nth-child(15) {
     margin-right: 0;
-  }
-
-  .all_box .product_img img {
-    height: 220px;
   }
 
   .footer_inner {
