@@ -1272,6 +1272,10 @@ label {
   margin-bottom: 7px;
 }
 
+.quick a:last-child {
+  margin-bottom: 0;
+}
+
 .quick .dis {
   display: none;
 }
