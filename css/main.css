@@ -55,12 +55,11 @@ label {
 
 /************popup*****************/
 .popup {
-  position: absolute;
-  top: 12%;
-  left: 5%;
-  width: 70%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   z-index: 10000;
-  padding: 20px;
   background-color: #fff;
   border: 1px solid black;
 }
@@ -71,8 +70,13 @@ label {
 }
 
 .popup_close {
+  height: 30px;
+  line-height: 30px;
+  background-color: #008BCC;
   overflow: hidden;
-  margin-top: 10px;
+  font-size: 0.85rem;
+  padding-left: 5px;
+  color: #fff;
 }
 
 .popup_close p {
@@ -81,12 +85,13 @@ label {
 }
 
 .popup_close p i {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ccc;
 }
 
 .popup_close label {
   float: right;
+  padding-right: 5px;
 }
 
 #popup_chk {
@@ -1277,7 +1282,11 @@ label {
 
 @media (min-width:601px) {
   .popup {
+    position: fixed;
     width: 400px;
+    left: 5%;
+    top: 10%;
+    bottom: auto;
   }
 
   .popup_img img {
@@ -1585,9 +1594,6 @@ label {
 }
 
 @media(min-width:1070px) {
-  .popup {
-    left: 15%;
-  }
 
   .fix {
     position: sticky;
@@ -1664,7 +1670,7 @@ label {
   }
 
   .gnb .sns li a i {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .lnb_pc {
