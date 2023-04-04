@@ -905,6 +905,7 @@ label {
 }
 
 .review_box {
+  position: relative;
   margin: 0 3px;
   height: 435px;
   border: 1px solid #ccc;
@@ -955,6 +956,22 @@ label {
 .review_comment .prod {
   font-size: 0.8rem;
   padding-top: 5px;
+}
+
+.rank {
+  position: absolute;
+  top: 0;
+  width: 45px;
+  height: 55px;
+  background-color:#1877f2;
+}
+
+.rank p {
+  line-height: 55px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
 }
 
 .review_slide .slick-arrow {
@@ -1059,6 +1076,7 @@ label {
   width: 100%;
   text-align: center;
   overflow: hidden;
+  margin: 15px 0;
 }
 
 .la_more a {
@@ -1232,7 +1250,7 @@ label {
 /***********quick************/
 .quick {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 0;
   margin-right: 5px;
   z-index: 999;
@@ -1457,7 +1475,7 @@ label {
   }
 
   .quick {
-    bottom: 30px;
+    bottom: 50px;
     right: 5px;
   }
 
@@ -1465,7 +1483,7 @@ label {
     border-radius: 0;
     font-size: 0.65rem;
     width: 55px;
-    height: 50px;
+    height: 55px;
     line-height: 20px;
     padding-top: 5px;
     margin-bottom: 5px;
@@ -1478,6 +1496,22 @@ label {
 
   .quick a i {
     font-size: 1.2rem;
+  }
+
+  .all_sheet {
+    height: 870px;
+  }
+
+  #more_ra1:checked~.all_sheet {
+    height: 1740px;
+  }
+
+  #more_ra2:checked~.all_sheet {
+    height: 2030px;
+  }
+
+  #more_ra3:checked~.all_sheet {
+    height: 2320px;
   }
 }
 
@@ -1499,9 +1533,15 @@ label {
     left: -1069px;
   }
 
-  .rec_box .product_img:hover img,
-  .new_box .product_img:hover img,
-  .all_box .product_img:hover img {
+  .rec_box:hover .product_img,
+  .new_box:hover .product_img,
+  .all_box:hover .product_img {
+    border: 1px solid #008BCC;
+  }
+
+  .rec_box:hover .product_img img,
+  .new_box:hover .product_img img,
+  .all_box:hover .product_img img {
     scale: 1.1;
   }
 
@@ -1525,6 +1565,22 @@ label {
   .review_comment .pa {
     height: 100px;
     font-size: 1rem;
+  }
+
+  .all_sheet {
+    height: 960px;
+  }
+
+  #more_ra1:checked~.all_sheet {
+    height: 1280px;
+  }
+
+  #more_ra2:checked~.all_sheet {
+    height: 1600px;
+  }
+
+  #more_ra3:checked~.all_sheet {
+    height: 1920px;
   }
 }
 
@@ -1986,6 +2042,26 @@ label {
     font-size: 1.8rem;
   }
 
+  .all_sheet {
+    height: 960px;
+  }
+
+  #more_ra1:checked~.all_sheet {
+    height: 1280px;
+  }
+
+  #more_ra2:checked~.all_sheet {
+    height: 1600px;
+  }
+
+  #more_ra2:checked~.la_more {
+    display: none;
+  }
+
+  /*   #more_ra3:checked~.all_sheet {
+    height: 1920px;
+  } */
+
   /* .menu_list .lnb {
     overflow: hidden;
     height: 50px;
@@ -2013,7 +2089,6 @@ label {
   .menu_list ul li label {
     line-height: 50px;
     cursor: pointer;
-
   } */
 
   /* .menu_list ul li a label i {
@@ -2196,7 +2271,8 @@ label {
 
   .all_box:nth-child(5),
   .all_box:nth-child(10),
-  .all_box:nth-child(15) {
+  .all_box:nth-child(15),
+  .all_box:nth-child(20) {
     margin-right: 0;
   }
 
