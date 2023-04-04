@@ -1033,6 +1033,7 @@ label {
 .all_desert {
   display: none;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .all_box {
@@ -1047,6 +1048,72 @@ label {
 
 .all_box .pa {
   letter-spacing: -0.4px;
+}
+
+.all_sheet {
+  height: 720px;
+  transition: all 0.3s;
+}
+
+.content .la_more {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.la_more a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #173C86;
+  color: white;
+}
+
+.la_more a label {
+  display: block;
+}
+
+.la_more .nw2,
+.la_more .nw3 {
+  display: none;
+}
+
+#more_ra1,
+#more_ra2,
+#more_ra3,
+#more_ra4 {
+  display: none;
+}
+
+#more_ra1:checked~.all_sheet {
+  height: 960px;
+}
+
+#more_ra1:checked~.la_more .nw2,
+#more_ra2:checked~.la_more .nw3 {
+  display: inline-block;
+}
+
+#more_ra2:checked~.all_sheet {
+  height: 1200px;
+}
+
+#more_ra1:checked~.la_more .nw1,
+#more_ra2:checked~.la_more .nw1,
+#more_ra2:checked~.la_more .nw2,
+#more_ra3:checked~.la_more .nw1,
+#more_ra3:checked~.la_more .nw3 {
+  display: none;
+}
+
+#more_ra2:checked~.all_sheet {
+  height: 1440px;
+}
+
+#more_ra3:checked~.all_sheet {
+  height: 2880px;
 }
 
 #every,
