@@ -13,17 +13,17 @@
 
 <body>
   <input type="checkbox" id="popup_chk">
-    <div class="popup">
-      <div class="popup_img">
-        <a href="#!">
-          <img src="./img/popup_img.jpg" alt="popup_img">
-        </a>
-      </div>
-      <div class="popup_close">
-        <p><i class="far fa-check-circle"></i> 오늘하루동안 닫을래요</p>
-        <label for="popup_chk">닫기 X</label>
-      </div>
+  <div class="popup">
+    <div class="popup_img">
+      <a href="#!">
+        <img src="./img/popup_img.jpg" alt="popup_img">
+      </a>
     </div>
+    <div class="popup_close">
+      <p><i class="far fa-check-circle"></i> 오늘하루동안 닫을래요</p>
+      <label for="popup_chk">닫기 X</label>
+    </div>
+  </div>
 
   <input type="checkbox" id="menu_chk">
   <input type="checkbox" id="drop_chk">
@@ -50,10 +50,15 @@
             <li><a href="#">마이페이지</a></li>
           </ul>
           <ul class="sns">
-            <li class="blog"><a href="#"><i class="fas fa-blog"></i></a></li>
-            <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="blog"><a href="https://blog.naver.com/ediya-coffee" target="_blank"><i
+                  class="fas fa-blog"></i></a></li>
+            <li class="insta"><a href="https://www.instagram.com/ediya.coffee/" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li class="face"><a href="https://www.facebook.com/iEDIYA" target="_blank"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCK45lxAV_92LqR2DcQCP8Qg?view_as=subscriber"
+                target="_blank"><i class="fab fa-youtube"></i>
           </ul>
         </div>
 
@@ -219,7 +224,7 @@
         <picture>
           <source media="(min-width:1170px)" srcset="./img/visual_banner.jpg">
           <source media="(min-width:601px)" srcset="./img/visual_banner.jpg">
-          <source media="(min-width:321px)" srcset="./img/visual_banner_mobile1.jpg">
+          <source media="(min-width:321px)" srcset="./img/visual_banner_m.jpg">
           <img src="./img/visual_banner_mobile1.jpg" alt="이미지" style="width:100%">
         </picture>
       </div>
@@ -1142,7 +1147,7 @@
           <label for="every" class="eve">All</label>
           <label for="all_coffee" class="ac">커피</label>
           <label for="all_tea" class="at">음료·티</label>
-          <label for="all_cake" class="ae">디저트</label>
+          <label for="all_cake" class="ae">케이크</label>
         </div>
 
         <div class="all_select">
@@ -1658,15 +1663,20 @@
       </section>
       <div class="bottom_sns">
         <ul class="sns">
-          <li class="blog"><a href="#!"><i class="fas fa-blog"></i></a></li>
-          <li class="insta"><a href="#!"><i class="fab fa-instagram"></i></a></li>
-          <li class="face"><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="youtube"><a href="#!"><i class="fab fa-youtube"></i></a></li>
+          <li class="blog"><a href="https://blog.naver.com/ediya-coffee" target="_blank"><i class="fas fa-blog"></i></a>
+          </li>
+          <li class="insta"><a href="https://www.instagram.com/ediya.coffee/" target="_blank"><i
+                class="fab fa-instagram"></i></a></li>
+          <li class="face"><a href="https://www.facebook.com/iEDIYA" target="_blank"><i
+                class="fab fa-facebook-f"></i></a></li>
+          <li class="youtube"><a href="https://www.youtube.com/channel/UCK45lxAV_92LqR2DcQCP8Qg?view_as=subscriber"
+              target="_blank"><i class="fab fa-youtube"></i></a></li>
         </ul>
       </div>
-
     </div>
   </div>
+
+
 
   <footer class="footer">
     <div class="footer_inner">
@@ -1721,12 +1731,15 @@
       $('.visual_banner').slick({
         dots: true,
         infinite: true,
-        autoplay: true
+        autoplay: true,
+        fade: true,
+        speed:500
       });
     });
 
     $(document).ready(function () {
       $('.best_slide').slick({
+        autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         speed: 400,
