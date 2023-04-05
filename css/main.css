@@ -498,7 +498,7 @@ label {
 
 .best_box .pa {
   padding-top: 5px;
-  letter-spacing: 0;
+  letter-spacing: 0.3px;
   font-size: 0.9rem;
   line-height: 15px;
   height: 55px;
@@ -646,7 +646,6 @@ label {
   letter-spacing: -0.3px;
 }
 
-
 #tab1,
 #tab2,
 #tab3,
@@ -694,11 +693,6 @@ label {
   display: none;
 }
 
-/* .plus,
-.plus1 {
-  display: none;
-}
- */
 #more_chk:checked~.sheet .ha_op {
   display: none;
 }
@@ -1651,10 +1645,6 @@ label {
 }
 
 @media(min-width:1070px) {
-  .popup {
-    width: 450px;
-  }
-
   .popup_img img {
     height: 450px;
   }
@@ -1934,6 +1924,7 @@ label {
 
   .review_comment .prod {
     font-size: 1rem;
+    line-height: 20px;
   }
 
   .hash {
@@ -2032,6 +2023,14 @@ label {
 
   .middle_banner img {
     height: 260px;
+  }
+
+  .review_box {
+    height: 485px;
+  }
+
+  .review_img img {
+    height: 250px;
   }
 
   .all_box {
@@ -2281,10 +2280,6 @@ label {
     margin-right: 10px;
   }
 
-  .sheet div div .rec_box a {
-    border: 1px solid #e8e8e8;
-  }
-
   .sheet .happy:last-child div div .rec_box {
     margin-right: 0;
   }
@@ -2299,6 +2294,7 @@ label {
   }
 
   .review_box {
+    height: 475px;
     margin: auto;
     margin-right: 10px;
   }
