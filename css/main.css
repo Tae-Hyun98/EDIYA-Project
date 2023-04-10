@@ -53,6 +53,11 @@ label {
   cursor: pointer;
 }
 
+.eb {
+  color: blue;
+  font-weight: bold;
+}
+
 /************popup*****************/
 .popup {
   position: fixed;
@@ -97,11 +102,47 @@ label {
   display: none;
 }
 
-#popup_chk~.popup {
+#popup_chk:checked~.popup {
+  display: none;
+}
+
+/**********sub_popup***********/
+.popup_sub {
+  position: fixed;
+  top: 20%;
+  left: 20px;
+  width: 50%;
+  z-index: 9999;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.popup_des {
+  height: 100px;
+  padding: 10px 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.popup_sub_close {
+  height: 35px;
+  line-height: 35px;
+  background-color: #008BCC;
+  overflow: hidden;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.popup_sub_close label {
+  float: right;
+  padding-right: 3%;
   display: block;
 }
 
-#popup_chk:checked~.popup {
+#sub_chk {
+  display: none;
+}
+
+#sub_chk:checked~.popup_sub {
   display: none;
 }
 
@@ -176,6 +217,10 @@ label {
   padding-left: 10%;
 }
 
+.menu_list li .eb {
+  color: greenyellow;
+}
+
 .menu_list li i {
   position: absolute;
   right: 10px;
@@ -191,9 +236,11 @@ label {
 }
 
 .menu_list .login {
-  position: relative;
   font-size: 0;
-  padding-left: 10%;
+  padding-left: 5%;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .menu_list .login i {
@@ -206,21 +253,22 @@ label {
 }
 
 .menu_list .login p {
-  display: inline-block;
+  width: 48%;
+  float: left;
 }
 
 .menu_list .login p:first-child a {
-  margin-right: 5px;
+  margin-right: 5%;
 }
 
 .menu_list .login p a {
-  border: 1px solid white;
-  font-size: 0.7rem;
+  display: block;
+  border: 2px solid white;
+  font-size: 0.8rem;
   font-weight: bold;
-  padding: 5px 10px;
   color: white;
-  height: 60px;
-  line-height: 60px;
+  padding: 7px 0px;
+  text-align: center;
 }
 
 .list {
@@ -476,13 +524,15 @@ label {
 }
 
 .best {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .best_box {
-  width: 100%;
-  height: auto;
-  padding: 5px 3px;
+  padding: 0px 3px;
+}
+
+.best_box .product_img img {
+  height: 180px;
 }
 
 .product_img {
@@ -492,7 +542,6 @@ label {
 
 .product_img img {
   width: 100%;
-  height: 150px;
   transition: all 0.3s;
 }
 
@@ -801,7 +850,7 @@ label {
 
 .middle_banner img {
   width: 100%;
-  height: 140px;
+  height: 180px;
 }
 
 
@@ -903,13 +952,13 @@ label {
 .review_box {
   position: relative;
   margin: 0 3px;
-  height: 435px;
+  height: 480px;
   border: 1px solid #ccc;
 }
 
 .review_img img {
   width: 100%;
-  height: 200px;
+  height: 230px;
 }
 
 .review_comment {
@@ -929,7 +978,7 @@ label {
 }
 
 .rating {
-  padding-bottom: 5px;
+  padding: 5px 0;
 }
 
 .rating p {
@@ -1296,6 +1345,16 @@ label {
     line-height: 50px;
   }
 
+  .popup_sub {
+    top: 70%;
+    width: 45%;
+  }
+
+  .popup_des {
+    height: 120px;
+    font-size: 1.2rem;
+  }
+
   .header .logo h1 a {
     font-size: 2.5rem;
     line-height: 70px;
@@ -1327,6 +1386,7 @@ label {
   .menu_list {
     left: -500px;
     width: 45%;
+    overflow-y: scroll;
   }
 
   .menu_list li a {
@@ -1341,6 +1401,10 @@ label {
 
   .menu_list .login p a {
     font-size: 1rem;
+  }
+
+  .menu_list .login p a {
+    padding: 5px 0;
   }
 
   .list li a {
@@ -1374,7 +1438,7 @@ label {
   }
 
   .product_img img {
-    height: 220px;
+    height: 240px;
   }
 
   .rec {
@@ -1425,7 +1489,7 @@ label {
   }
 
   .visual img {
-    height: 300px;
+    height: 250px;
   }
 
   .middle_banner img {
@@ -1649,10 +1713,11 @@ label {
     height: 450px;
   }
 
-  .fix {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+  .popup_sub {
+    top: 30%;
+    right: 5%;
+    left: auto;
+    width: 30%;
   }
 
   .header .menu label {
@@ -1660,8 +1725,8 @@ label {
   }
 
   .header .logo h1 a {
-    font-size: 2.8rem;
-    line-height: 115px;
+    font-size: 3rem;
+    line-height: 135px;
   }
 
   .header .header_inner {
@@ -1734,6 +1799,7 @@ label {
   .lnb_pc {
     display: block;
     width: 100%;
+    background-color: #fff;
     border-top: 1px solid black;
     border-bottom: 1px solid #000;
   }
@@ -1826,9 +1892,9 @@ label {
 
   .search_box {
     position: absolute;
-    width: 250px;
+    width: 260px;
     right: 10px;
-    top: 40px;
+    top: 45px;
     padding: 0;
     background-color: white;
   }
@@ -1849,7 +1915,7 @@ label {
   }
 
   .visual_banner img {
-    height: 350px;
+    height: 400px;
   }
 
   .visual_banner .slick-prev::before {
@@ -1882,7 +1948,7 @@ label {
   }
 
   .content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .won {
@@ -2006,7 +2072,7 @@ label {
   }
 
   .rec_box .product_img img {
-    height: 240px;
+    height: 260px;
   }
 
   #new_more:checked~.new .rec {
@@ -2022,7 +2088,7 @@ label {
   }
 
   .middle_banner img {
-    height: 260px;
+    height: 310px;
   }
 
   .review_box {
@@ -2039,8 +2105,8 @@ label {
   }
 
   .all_tab label {
-    font-size: 1rem;
-    padding: 0 7px;
+    font-size: 1.1rem;
+    padding: 0 15px;
   }
 
   .new_box {
@@ -2049,7 +2115,7 @@ label {
   }
 
   .new .product_img img {
-    height: 240px;
+    height: 260px;
   }
 
   .footer {
@@ -2102,19 +2168,13 @@ label {
     font-size: 1.7rem;
   }
 
-  .quick .blind {
-    display: none;
+  .quick {
+    right: 15px;
   }
 
   .quick .up {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-
-  .quick .up i {
-    font-size: 1.8rem;
+    height: 30px;
+    line-height: 30px;
   }
 
   .all_sheet {
@@ -2213,6 +2273,11 @@ label {
     left: 10%;
   }
 
+  .popup_sub {
+    width: 300px;
+    right: 15%;
+  }
+
   .header .header_inner {
     width: 1274px;
     margin: 0 auto;
@@ -2264,7 +2329,7 @@ label {
   }
 
   .best_box .product_img img {
-    height: 250px;
+    height: 260px;
   }
 
   .label {
