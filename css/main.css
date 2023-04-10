@@ -610,7 +610,7 @@ label {
 }
 
 .hash {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .bold {
@@ -638,7 +638,7 @@ label {
 
 .sheet {
   background-color: #f2f4f7;
-  padding: 5px;
+  padding: 10px 5px 0px 5px;
 }
 
 .rec {
@@ -648,16 +648,18 @@ label {
 }
 
 .rec_box {
-  width: calc(100% - 50% - 4px);
-  margin-right: 4px;
-  margin-bottom: 10px;
+  width: calc(100% - 50% - 2.5px);
+  margin-right: 5px;
+  margin-bottom: 15px;
   float: left;
   overflow: hidden;
 }
 
-.sheet div:nth-child(3),
+.sheet div:nth-child(2),
+.sheet div:nth-child(4),
 .sheet div:nth-child(6),
-.sheet div:nth-child(9),
+.sheet div:nth-child(8),
+.sheet div:nth-child(10),
 .sheet div:nth-child(12) {
   margin-right: 0;
 }
@@ -867,7 +869,11 @@ label {
 
 /***************new***************/
 .new {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+}
+
+.new .more {
+  margin-top: 15px;
 }
 
 .new .rec {
@@ -877,14 +883,14 @@ label {
 
 .new_box {
   width: calc(100% - 50% - 2.5px);
-  height: 260px;
   margin-right: 5px;
   float: left;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .new .product_img img {
-  height: 170px;
+  height: 180px;
 }
 
 .new label {
