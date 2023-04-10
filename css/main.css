@@ -524,7 +524,7 @@ label {
 }
 
 .best {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .best_box {
@@ -532,7 +532,7 @@ label {
 }
 
 .best_box .product_img img {
-  height: 180px;
+  height: 190px;
 }
 
 .product_img {
@@ -562,12 +562,12 @@ label {
 .best_slide .slick-arrow {
   position: absolute;
   left: 10%;
-  top: -5px;
+  top: 1px;
   transform: translateY(-155%);
   z-index: 10;
   font-size: 0;
   visibility: hidden;
-  color: black;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -576,7 +576,13 @@ label {
   font-family: "Font Awesome 5 Free";
   visibility: visible;
   font-weight: bold;
+  background-color: #999;
   font-size: 20px;
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  font-size: 1.4rem;
 }
 
 .best_slide .slick-next {
@@ -589,13 +595,18 @@ label {
   font-family: "Font Awesome 5 Free";
   visibility: visible;
   font-weight: bold;
-  font-size: 20px;
+  display: block;
+  background-color: #999;
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.4rem;
 }
 
 
 /********recommand************/
 .recommand {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .hash {
@@ -631,19 +642,15 @@ label {
 }
 
 .rec {
-  height: 230px;
+  height: 528px;
   overflow: hidden;
   transition: all 0.3s;
-  /* display: flex;
-  flex-wrap: wrap;
-  transition: all 0.3s;
-  overflow: hidden; */
 }
 
 .rec_box {
-  width: calc(100% - 66.6667% - 2.7px);
-  height: 230px;
+  width: calc(100% - 50% - 4px);
   margin-right: 4px;
+  margin-bottom: 10px;
   float: left;
   overflow: hidden;
 }
@@ -658,6 +665,10 @@ label {
 .rec_box .product_img {
   width: 100%;
   overflow: hidden;
+}
+
+.rec_box .product_img img {
+  height: 180px;
 }
 
 .more {
@@ -826,31 +837,31 @@ label {
 #more_chk3:checked~.sheet .rec_sad,
 #more_chk6:checked~.sheet .rec_gift_item,
 #more_chk9:checked~.sheet .rec_angry {
-  height: 460px;
+  height: 792px;
 }
 
 #more_chk1:checked~.sheet .rec_happy,
 #more_chk4:checked~.sheet .rec_sad,
 #more_chk7:checked~.sheet .rec_gift_item,
 #more_chk10:checked~.sheet .rec_angry {
-  height: 690px;
+  height: 1056px;
 }
 
 #more_chk2:checked~.sheet .rec_happy,
 #more_chk5:checked~.sheet .rec_sad,
 #more_chk8:checked~.sheet .rec_gift_item,
 #more_chk11:checked~.sheet .rec_angry {
-  height: 920px;
+  height: auto;
 }
 
 .middle_banner {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .middle_banner img {
   width: 100%;
-  height: 180px;
+  height: 200px;
 }
 
 
