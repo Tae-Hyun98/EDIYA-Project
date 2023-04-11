@@ -231,6 +231,12 @@ label {
   display: block;
 }
 
+.menu_list .login .log i {
+  font-size: 1.1rem;
+  position: unset;
+  padding-right: 3px;
+}
+
 .menu_list .login .wide {
   display: none;
 }
@@ -436,7 +442,6 @@ label {
 }
 
 
-
 /***********visual***************/
 .visual {
   position: relative;
@@ -518,8 +523,8 @@ label {
 
 .content h1 {
   position: relative;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+  font-size: 1.9rem;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -561,24 +566,25 @@ label {
 
 .best_slide .slick-arrow {
   position: absolute;
-  left: 10%;
-  top: 1px;
-  transform: translateY(-155%);
-  z-index: 10;
+  right: 0;
+  top: 0;
+  transform: translateY(-150%);
+  z-index: 1;
   font-size: 0;
   visibility: hidden;
   color: #fff;
   cursor: pointer;
 }
 
-.best_slide .slick-prev::before {
+.best_slide .slick-prev::before,
+.best_slide .slick-next::before {
   content: "\f053";
   font-family: "Font Awesome 5 Free";
   visibility: visible;
   font-weight: bold;
   background-color: #999;
   font-size: 20px;
-  width: 25px;
+  width: 30px;
   height: 30px;
   line-height: 30px;
   display: block;
@@ -586,21 +592,15 @@ label {
 }
 
 .best_slide .slick-next {
-  left: auto;
-  right: 10%;
+  right: 2%;
+}
+
+.best_slide .slick-prev {
+  right: 12%;
 }
 
 .best_slide .slick-next::before {
   content: "\f054";
-  font-family: "Font Awesome 5 Free";
-  visibility: visible;
-  font-weight: bold;
-  display: block;
-  background-color: #999;
-  width: 25px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 1.4rem;
 }
 
 
@@ -642,7 +642,7 @@ label {
 }
 
 .rec {
-  height: 528px;
+  height: 530px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -690,6 +690,7 @@ label {
   width: 100px;
   height: 40px;
   line-height: 40px;
+  margin-top: 10px;
   text-align: center;
   background-color: #173C86;
   color: white;
@@ -699,9 +700,9 @@ label {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   padding-top: 5px;
-  height: 48px;
+  height: 49px;
   line-height: 14px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
@@ -839,14 +840,14 @@ label {
 #more_chk3:checked~.sheet .rec_sad,
 #more_chk6:checked~.sheet .rec_gift_item,
 #more_chk9:checked~.sheet .rec_angry {
-  height: 792px;
+  height: 795px;
 }
 
 #more_chk1:checked~.sheet .rec_happy,
 #more_chk4:checked~.sheet .rec_sad,
 #more_chk7:checked~.sheet .rec_gift_item,
 #more_chk10:checked~.sheet .rec_angry {
-  height: 1056px;
+  height: 1335px;
 }
 
 #more_chk2:checked~.sheet .rec_happy,
@@ -868,6 +869,11 @@ label {
 
 
 /***************new***************/
+.inner_box {
+  width: 1274px;
+  margin: 0 auto;
+}
+
 .new {
   margin-bottom: 70px;
 }
@@ -1723,6 +1729,13 @@ label {
   #more_ra3:checked~.all_sheet {
     height: 1920px;
   }
+
+  .visual_banner .slick-prev::before,
+  .visual_banner .slick-next::before {
+    font-size: 35px;
+    color: black;
+    visibility: visible;
+  }
 }
 
 @media(min-width:1070px) {
@@ -1841,7 +1854,6 @@ label {
     font-size: 1.2rem;
     background-color: #fff;
     z-index: 1;
-
   }
 
   .lnb_pc ul li a:hover {
@@ -1981,11 +1993,12 @@ label {
   }
 
   .best_slide .slick-next {
-    right: 39%;
+    right: 3%;
   }
 
   .best_slide .slick-prev {
-    left: 39%;
+    left: auto;
+    right: 6%;
   }
 
   .best_slide .slick-next::before {
