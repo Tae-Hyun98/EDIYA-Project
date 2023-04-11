@@ -1135,7 +1135,7 @@ label {
   transition: all 0.3s;
 }
 
-.content .la_more {
+.all_box .la_more {
   width: 100%;
   text-align: center;
   overflow: hidden;
