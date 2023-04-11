@@ -111,7 +111,7 @@ label {
   position: fixed;
   top: 20%;
   left: 20px;
-  width: 50%;
+  width: 55%;
   z-index: 9999;
   border: 1px solid black;
   background-color: #fff;
@@ -611,6 +611,7 @@ label {
 
 .hash {
   font-size: 1.2rem;
+  padding-bottom: 2px;
 }
 
 .bold {
@@ -872,7 +873,7 @@ label {
 /***************new***************/
 
 .new {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .new .more {
@@ -889,7 +890,7 @@ label {
   margin-right: 5px;
   float: left;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .new .product_img img {
@@ -955,12 +956,8 @@ label {
 }
 
 #new_more1:checked~.new .rec {
-  height: 1560px;
+  height: auto;
 }
-
-/* #new_more2:checked~.new .rec {
-  height: 1300px;
-} */
 
 
 /***********review*************/
@@ -1120,12 +1117,13 @@ label {
 
 .all_box {
   width: calc(100% - 50%);
-  height: 240px;
+  height: auto;
   padding: 0 4px;
+  margin-bottom: 15px;
 }
 
 .all_box .product_img img {
-  height: 160px;
+  height: 180px;
 }
 
 .all_box .pa {
@@ -1133,7 +1131,7 @@ label {
 }
 
 .all_sheet {
-  height: 720px;
+  height: 800px;
   transition: all 0.3s;
 }
 
@@ -1171,7 +1169,7 @@ label {
 }
 
 #more_ra1:checked~.all_sheet {
-  height: 960px;
+  height: 1066px;
 }
 
 #more_ra1:checked~.la_more .nw2,
@@ -1180,7 +1178,11 @@ label {
 }
 
 #more_ra2:checked~.all_sheet {
-  height: 1200px;
+  height: 1610px;
+}
+
+#more_ra3:checked~.all_sheet {
+  height: auto;
 }
 
 #more_ra1:checked~.la_more .nw1,
@@ -1189,14 +1191,6 @@ label {
 #more_ra3:checked~.la_more .nw1,
 #more_ra3:checked~.la_more .nw3 {
   display: none;
-}
-
-#more_ra2:checked~.all_sheet {
-  height: 1440px;
-}
-
-#more_ra3:checked~.all_sheet {
-  height: 2880px;
 }
 
 #every,
