@@ -732,6 +732,7 @@ label {
   background-color: yellowgreen;
   color: white;
   font-weight: bold;
+  text-decoration: underline 2px solid #fff;
 }
 
 #tab1:checked~.recommand .sheet .happy,
@@ -859,7 +860,7 @@ label {
 
 .middle_banner {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .middle_banner img {
@@ -869,10 +870,6 @@ label {
 
 
 /***************new***************/
-.inner_box {
-  width: 1274px;
-  margin: 0 auto;
-}
 
 .new {
   margin-bottom: 70px;
@@ -1977,7 +1974,7 @@ label {
   }
 
   .content h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .won {
@@ -1988,17 +1985,13 @@ label {
     height: 350px;
   }
 
-  .best_slide .slick-arrow {
-    top: 1%;
-  }
-
   .best_slide .slick-next {
-    right: 3%;
+    right: 5%;
   }
 
   .best_slide .slick-prev {
     left: auto;
-    right: 6%;
+    right: 9%;
   }
 
   .best_slide .slick-next::before {
@@ -2324,6 +2317,11 @@ label {
 
   .lnb_pc ul li {
     width: 182px;
+  }
+
+  .inner_box {
+    width: 1274px;
+    margin: 0 auto;
   }
 
   .down {
