@@ -963,7 +963,7 @@ label {
 /***********review*************/
 .review {
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .review_box {
@@ -1456,12 +1456,12 @@ label {
   }
 
   .rec {
-    height: 310px;
+    height: 261px;
   }
 
   .rec_box {
     width: calc(100% - 66.6667% - 3.4px);
-    height: 310px;
+    height: auto;
     margin-right: 5px;
   }
 
@@ -1469,21 +1469,21 @@ label {
   #more_chk3:checked~.sheet .rec_sad,
   #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
-    height: 620px;
+    height: 815px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
   #more_chk4:checked~.sheet .rec_sad,
   #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
-    height: 930px;
+    height: 1090px;
   }
 
   #more_chk2:checked~.sheet .rec_happy,
   #more_chk5:checked~.sheet .rec_sad,
   #more_chk8:checked~.sheet .rec_gift_item,
   #more_chk11:checked~.sheet .rec_angry {
-    height: 1240px;
+    height: auto;
   }
 
   .pa {
@@ -1524,11 +1524,11 @@ label {
   }
 
   #new_more:checked~.new .rec {
-    height: 930px;
+    height: 940px;
   }
 
   #new_more1:checked~.new .rec {
-    height: 1240px;
+    height: 1270px;
   }
 
   #new_more1:checked~.new .nw3 {
@@ -1549,13 +1549,17 @@ label {
     margin-right: 5px;
   }
 
+  .review {
+    margin-bottom: 80px;
+  }
+
   .review_comment .prod {
     font-size: 0.8rem;
   }
 
   .all_box {
     width: calc(100% - 66.6667%);
-    height: 290px;
+    height: auto;
     padding: 0 5px;
   }
 
