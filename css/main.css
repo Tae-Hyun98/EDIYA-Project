@@ -446,6 +446,7 @@ label {
 .visual {
   position: relative;
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .visual img {
@@ -537,7 +538,7 @@ label {
 }
 
 .best_box .product_img img {
-  height: 190px;
+  height: 200px;
 }
 
 .product_img {
@@ -1342,15 +1343,15 @@ label {
 @media (min-width:601px) {
   .popup {
     position: fixed;
-    width: 400px;
-    left: 5%;
-    top: 10%;
+    width: 390px;
+    left: 50px;
+    top: 70px;
     bottom: auto;
     border: 1px solid #625e5e;
   }
 
   .popup_img img {
-    height: 400px;
+    height: 410px;
     border-radius: 0;
   }
 
@@ -1360,7 +1361,7 @@ label {
   }
 
   .popup_sub {
-    top: 70%;
+    top: 69%;
     width: 45%;
   }
 
@@ -1385,7 +1386,7 @@ label {
   }
 
   .content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .best_box {
@@ -1451,16 +1452,35 @@ label {
     height: 120px;
   }
 
+  .best_slide .slick-prev::before,
+  .best_slide .slick-next::before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .best_slide .slick-arrow {
+    transform: translateY(-130%);
+  }
+
+  .best_slide .slick-prev {
+    right: 9%;
+  }
+
   .product_img img {
-    height: 240px;
+    height: 220px;
+  }
+
+  .best_box .product_img img {
+    height: 215px;
   }
 
   .rec {
-    height: 261px;
+    height: 300px;
   }
 
   .rec_box {
-    width: calc(100% - 66.6667% - 3.4px);
+    width: calc(100% - 66.6667% - 3.33px);
     height: auto;
     margin-right: 5px;
   }
@@ -1469,14 +1489,14 @@ label {
   #more_chk3:checked~.sheet .rec_sad,
   #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
-    height: 815px;
+    height: 610px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
   #more_chk4:checked~.sheet .rec_sad,
   #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
-    height: 1090px;
+    height: 910px;
   }
 
   #more_chk2:checked~.sheet .rec_happy,
@@ -1493,7 +1513,7 @@ label {
   }
 
   .sheet {
-    padding: 10px 10px 0 10px;
+    padding: 10px 5px 0 5px;
   }
 
   .label label {
@@ -1503,11 +1523,36 @@ label {
   }
 
   .visual img {
-    height: 250px;
+    height: 270px;
+  }
+
+  .rec_box .product_img img {
+    height: 210px;
+  }
+
+  .sheet div:nth-child(3),
+  .sheet div:nth-child(6),
+  .sheet div:nth-child(9),
+  .sheet div:nth-child(12),
+  .sheet div:nth-child(15),
+  .sheet div:nth-child(18) {
+    margin-right: 0;
+  }
+
+  .sheet div:nth-child(2),
+  .sheet div:nth-child(4),
+  .sheet div:nth-child(8),
+  .sheet div:nth-child(10) {
+    margin-right: 5px;
+  }
+
+  .recommand .sheet .sad,
+  .recommand .sheet .angry {
+    margin-right: 0;
   }
 
   .middle_banner img {
-    height: 200px;
+    height: 300px;
   }
 
   .new_box {
@@ -1520,15 +1565,15 @@ label {
   }
 
   .new .product_img img {
-    height: 210px;
+    height: 215px;
   }
 
   #new_more:checked~.new .rec {
-    height: 940px;
+    height: 950px;
   }
 
   #new_more1:checked~.new .rec {
-    height: 1270px;
+    height: auto;
   }
 
   #new_more1:checked~.new .nw3 {
@@ -1550,7 +1595,7 @@ label {
   }
 
   .review {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   .review_comment .prod {
@@ -1564,7 +1609,7 @@ label {
   }
 
   .all_box .product_img img {
-    height: 200px;
+    height: 215px;
   }
 
   .all_box .pa {
@@ -1668,11 +1713,44 @@ label {
   }
 
   .visual img {
-    height: 300px;
+    height: 340px;
   }
 
   .menu_list {
     left: -1069px;
+  }
+
+  .best_box .product_img img {
+    height: 270px;
+  }
+
+  .rec_box .product_img img {
+    height: 250px;
+  }
+
+  .rec {
+    height: 330px;
+  }
+
+  #more_chk:checked~.sheet .rec_happy,
+  #more_chk3:checked~.sheet .rec_sad,
+  #more_chk6:checked~.sheet .rec_gift_item,
+  #more_chk9:checked~.sheet .rec_angry {
+    height: 680px;
+  }
+
+  #more_chk1:checked~.sheet .rec_happy,
+  #more_chk4:checked~.sheet .rec_sad,
+  #more_chk7:checked~.sheet .rec_gift_item,
+  #more_chk10:checked~.sheet .rec_angry {
+    height: 1030px;
+  }
+
+  #more_chk2:checked~.sheet .rec_happy,
+  #more_chk5:checked~.sheet .rec_sad,
+  #more_chk8:checked~.sheet .rec_gift_item,
+  #more_chk11:checked~.sheet .rec_angry {
+    height: auto;
   }
 
   .rec_box:hover .product_img,
@@ -1694,10 +1772,6 @@ label {
 
   .all_box .product_img img {
     height: 220px;
-  }
-
-  .middle_banner img {
-    height: 230px;
   }
 
   .review_comment .prod {
@@ -1998,6 +2072,10 @@ label {
 
   .best_slide .slick-prev::before {
     font-size: 30px;
+  }
+
+  .best_box .product_img img {
+    height: 230px;
   }
 
   .rec_box {
