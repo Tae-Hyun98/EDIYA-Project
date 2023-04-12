@@ -24,40 +24,40 @@
   <input type="radio" name="ln_radio" id="gift_ra">
   <input type="radio" name="ln_radio" id="comu_ra">
   <div id="top"></div>
-  <div class="fix">
-    <header class="header">
-      <div class="header_inner">
-        <div class="gnb">
-          <ul class="gnb_login">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">장바구니</a></li>
-            <li><a href="#">최근본상품</a></li>
-          </ul>
-          <ul class="sns">
-            <li class="blog"><a href="#"><i class="fas fa-blog"></i></a></li>
-            <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-
-        <div class="menu">
-          <label for="menu_chk">
-            <i class="fas fa-bars"></i>
-          </label>
-        </div>
-
-        <div class="logo">
-          <h1><a href="./index.html">EDIYA COFFEE</a></h1>
-        </div>
-
-        <div class="search_box">
-          <i class="fas fa-search"></i>
-          <input type="search" placeholder="검색어를 입력해주세요.">
-        </div>
+  <header class="header">
+    <div class="header_inner">
+      <div class="gnb">
+        <ul class="gnb_login">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">최근본상품</a></li>
+        </ul>
+        <ul class="sns">
+          <li class="blog"><a href="#"><i class="fas fa-blog"></i></a></li>
+          <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="face"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
       </div>
-    </header>
+
+      <div class="menu">
+        <label for="menu_chk">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+
+      <div class="logo">
+        <h1><a href="./index.html">EDIYA COFFEE</a></h1>
+      </div>
+
+      <div class="search_box">
+        <i class="fas fa-search"></i>
+        <input type="search" placeholder="검색어를 입력해주세요.">
+      </div>
+    </div>
+  </header>
+  <div class="fix">
     <div class="lnb_pc">
       <div class="lnb_inner">
         <ul class="lnb_main">
@@ -102,7 +102,7 @@
             <a href="#!">커뮤니티</a>
             <ul class="comu_pc down">
               <li><a href="#!">공지사항</a></li>
-              <li><a href="subpage.html">EVENT</a></li>
+              <li><a href="subpage.html" class="eb">EVENT</a></li>
               <li><a href="#!">Q & A</a></li>
             </ul>
           </li>
@@ -114,14 +114,8 @@
   <div class="menu_list">
     <ul class="lnb">
       <div class="login">
-        <p><a href="#!">로그인</a></p>
+        <p class="log"><a href="#!"><i class="fas fa-sign-in-alt"></i> 로그인</a></p>
         <p><a href="#!">회원가입</a></p>
-        <p class="wide"><a href="#!">장바구니</a></p>
-        <p class="wide"><a href="#!">최근본상품</a></p>
-        <p class="sns wide"><a href="#"><i class="fas fa-blog"></i></a></p>
-        <p class="sns wide"><a href="#"><i class="fab fa-instagram"></i></a></p>
-        <p class="sns wide"><a href="#"><i class="fab fa-facebook-f"></i></a></p>
-        <p class="sns wide"><a href="#"><i class="fab fa-youtube"></i></a></p>
         <label for="menu_chk">
           <i class="fas fa-times"></i>
         </label>
@@ -183,7 +177,7 @@
         </a>
         <ul class="comu_list list">
           <li><a href="#">- 공지사항</a></li>
-          <li><a href="subpage.html">- EVENT</a></li>
+          <li><a href="subpage.html" class="eb">- EVENT</a></li>
           <li><a href="#">- Q & A</a></li>
         </ul>
       </li>
@@ -216,11 +210,27 @@
           <option>제목</option>
           <option value="content">내용</option>
         </select>
-        <input type="search" id="event_input"><i class="fas fa-search"></i>
+        <div class="search_bar">
+          <input type="search" id="event_input">
+          <button></button>
+        </div>
       </div>
     </div>
 
     <div class="event_list">
+      <div class="event_box">
+        <div class="eb_img">
+          <a href="#!">
+            <img src="./img/event_list11.jpg" alt="event_list"></a>
+        </div>
+        <div class="eb_letter">
+          <p><a href="#!">이디야커피 X 로스트아크 기프트카드 콜라보</a></p>
+          <p><span>기간 :</span> 2023년 04월 05일 ~ 2023년 04월 21일</p>
+        </div>
+        <div class="event_ing">
+          <p>진행중</p>
+        </div>
+      </div>
       <div class="event_box">
         <div class="eb_img">
           <a href="#!">

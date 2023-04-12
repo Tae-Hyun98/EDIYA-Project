@@ -237,10 +237,6 @@ label {
   padding-right: 3px;
 }
 
-.menu_list .login .wide {
-  display: none;
-}
-
 .menu_list .login {
   font-size: 0;
   padding-left: 5%;
@@ -1704,12 +1700,14 @@ label {
 
 @media (min-width:769px) {
   .popup {
-    width: 400px;
     left: 5%;
   }
 
-  .popup_img img {
-    height: 400px;
+  .popup_sub {
+    left: auto;
+    width: 35%;
+    top: 30%;
+    right: 10px;
   }
 
   .visual img {
@@ -2001,7 +1999,7 @@ label {
     padding: 0;
     padding-left: 5px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
   }
 
   .search_box i {

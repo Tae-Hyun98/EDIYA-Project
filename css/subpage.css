@@ -53,6 +53,11 @@ label {
   cursor: pointer;
 }
 
+.eb {
+  color: blue;
+  font-weight: bold;
+}
+
 /***********header**************/
 .fix {
   position: sticky;
@@ -132,18 +137,31 @@ label {
   line-height: 50px;
 }
 
+.menu_list li .eb {
+  color: greenyellow;
+}
+
 .menu_list li label {
   display: block;
 }
 
-.menu_list .login .wide {
-  display: none;
+.menu_list .login {
+  font-size: 0;
+  padding-left: 5%;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
-.menu_list .login {
-  position: relative;
-  font-size: 0;
-  padding-left: 10%;
+.menu_list .login .log i {
+  font-size: 1.1rem;
+  position: unset;
+  padding-right: 3px;
+}
+
+.menu_list .login p {
+  width: 48%;
+  float: left;
 }
 
 .menu_list .login i {
@@ -155,22 +173,22 @@ label {
   color: whitesmoke;
 }
 
-.menu_list .login p {
+/* .menu_list .login p {
   display: inline-block;
-}
+} */
 
 .menu_list .login p:first-child a {
   margin-right: 5px;
 }
 
 .menu_list .login p a {
-  border: 1px solid white;
-  font-size: 0.7rem;
+  display: block;
+  border: 2px solid white;
+  font-size: 0.8rem;
   font-weight: bold;
-  padding: 5px 10px;
   color: white;
-  height: 60px;
-  line-height: 60px;
+  padding: 7px 0px;
+  text-align: center;
 }
 
 .list {
@@ -386,27 +404,51 @@ label {
   margin: 0 5px;
 }
 
-#array {
-  width: 27%;
-  height: 35px;
-  margin-right: 2%;
-  padding-left: 10px;
-}
-
 .event_search {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .event_sel {
-  position: relative;
-  text-align: center;
+  width: 75%;
+  float: right;
+  overflow: hidden;
+}
+
+.event_sel select {
+  float: left;
+  width: 30%;
+  height: 35px;
+  margin-right: 2%;
+  padding-left: 5px;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+.search_bar {
+  overflow: hidden;
+  float: left;
+  width: 68%;
+  height: 35px;
+  border: 1px solid #777;
+}
+
+.search_bar button {
+  background: url(../img/icon_search.gif) no-repeat 11px center;
+  width: 34px;
+  height: 35px;
+  border: none;
+  float: right;
+  cursor: pointer;
 }
 
 #event_input {
   outline: none;
-  width: 70%;
+  border: none;
+  width: 80%;
   height: 35px;
-
+  padding-left: 5px;
 }
 
 .event_list {
@@ -661,6 +703,10 @@ label {
     font-size: 1rem;
   }
 
+  .event_sel {
+    width: 60%;
+  }
+
   .event_img img {
     height: 270px;
   }
@@ -700,18 +746,6 @@ label {
     height: 70px;
   }
 
-  .event_sel {
-    text-align: right;
-  }
-
-  #array {
-    width: 100px;
-  }
-
-  #event_input {
-    width: 230px;
-  }
-
   .location p {
     font-size: 1rem;
   }
@@ -746,6 +780,14 @@ label {
 }
 
 @media (min-width:769px) {
+  .event_sel {
+    width: 45%;
+  }
+
+  .event_img img {
+    height: 285px;
+  }
+
   .menu_list {
     left: -1069px;
   }
@@ -772,8 +814,8 @@ label {
   }
 
   .header .logo h1 a {
-    font-size: 2.9rem;
-    line-height: 115px;
+    font-size: 3rem;
+    line-height: 135px;
   }
 
   .header .header_inner {
@@ -937,17 +979,18 @@ label {
 
   .search_box {
     position: absolute;
-    width: 250px;
+    width: 260px;
     right: 10px;
-    top: 40px;
+    top: 48px;
     padding: 0;
     background-color: white;
   }
 
   .search_box input {
     padding: 0;
+    padding-left: 5px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
   }
 
   .search_box i {
@@ -958,8 +1001,20 @@ label {
     cursor: pointer;
   }
 
+  .event_img img {
+    height: 310px;
+  }
+
   .event_ment h1 {
     font-size: 3rem;
+  }
+
+  .event_search {
+    margin-bottom: 40px;
+  }
+
+  .event_sel select {
+    padding-left: 10px;
   }
 
   .event_box {
@@ -982,16 +1037,12 @@ label {
     height: 150px;
   }
 
+  .event_sel {
+    width: 35%;
+  }
+
   .event_ment p {
     font-size: 1.2rem;
-  }
-
-  #array {
-    margin-right: 1%;
-  }
-
-  #event_input {
-    width: 300px;
   }
 
   .quick .blind {
@@ -1067,11 +1118,6 @@ label {
     margin: 0 auto;
   }
 
-  .header .logo h1 {
-    line-height: 120px;
-    font-size: 2.8rem;
-  }
-
   .lnb_pc {
     background-color: #fff;
   }
@@ -1095,26 +1141,7 @@ label {
   }
 
   .search_box {
-    position: absolute;
-    width: 250px;
-    right: 22px;
-    top: 45px;
-    padding: 0;
-    background-color: white;
-  }
-
-  .search_box input {
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid black;
-  }
-
-  .search_box i {
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: 18px;
-    cursor: pointer;
+    right: 21px;
   }
 
   .event_outer {
