@@ -521,7 +521,7 @@ label {
 .content h1 {
   position: relative;
   font-size: 1.9rem;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -586,14 +586,15 @@ label {
   line-height: 30px;
   display: block;
   font-size: 1.4rem;
+  border-radius: 5px;
 }
 
 .best_slide .slick-next {
-  right: 2%;
+  right: 10px;
 }
 
 .best_slide .slick-prev {
-  right: 12%;
+  right: 50px;
 }
 
 .best_slide .slick-next::before {
@@ -1460,7 +1461,7 @@ label {
   }
 
   .best_slide .slick-prev {
-    right: 9%;
+    right: 55px;
   }
 
   .product_img img {
@@ -2010,6 +2011,10 @@ label {
     cursor: pointer;
   }
 
+  .visual {
+    margin-bottom: 100px;
+  }
+
   .visual_banner img {
     height: 400px;
   }
@@ -2051,17 +2056,20 @@ label {
     font-size: 1.1rem;
   }
 
+  .best {
+    margin-bottom: 100px;
+  }
+
   .best_box {
     height: 350px;
   }
 
   .best_slide .slick-next {
-    right: 5%;
+    right: 5px;
   }
 
   .best_slide .slick-prev {
-    left: auto;
-    right: 9%;
+    right: 50px;
   }
 
   .best_slide .slick-next::before {
@@ -2078,7 +2086,6 @@ label {
 
   .rec_box {
     width: calc(100% - 75% - 3.8px);
-    height: 340px;
   }
 
   .rec {
@@ -2136,7 +2143,6 @@ label {
   .sheet div div:nth-child(3),
   .sheet div div:nth-child(6),
   .sheet div div:nth-child(9),
-  .sheet div div:nth-child(12),
   .new .rec div.new_box:nth-child(3),
   .new .rec div.new_box:nth-child(6),
   .new .rec div.new_box:nth-child(9) {
@@ -2147,14 +2153,14 @@ label {
   #more_chk3:checked~.sheet .rec_sad,
   #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
-    height: 680px;
+    height: 700px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
   #more_chk4:checked~.sheet .rec_sad,
   #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
-    height: 1020px;
+    height: auto;
   }
 
   #more_chk1:checked~.sheet .ha_plus1,
@@ -2185,7 +2191,7 @@ label {
   }
 
   .middle_banner img {
-    height: 310px;
+    height: 340px;
   }
 
   .review_box {
