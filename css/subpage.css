@@ -718,7 +718,10 @@ label {
 
   .eb_letter p:first-child {
     font-size: 1.1rem;
-    height: 50px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .event_box {
@@ -740,10 +743,6 @@ label {
   .event_box:nth-child(8),
   .event_box:nth-child(10) {
     margin-right: 0;
-  }
-
-  .eb_letter {
-    height: 70px;
   }
 
   .location p {
@@ -794,10 +793,6 @@ label {
 
   .eb_letter p:first-child {
     font-size: 1.2rem;
-    height: auto;
-  }
-
-  .eb_letter {
     height: auto;
   }
 }
@@ -1023,7 +1018,8 @@ label {
 
   .event_box:nth-child(2),
   .event_box:nth-child(4),
-  .event_box:nth-child(8) {
+  .event_box:nth-child(8),
+  .event_box:nth-child(10) {
     margin-right: 10px;
   }
 
