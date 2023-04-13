@@ -874,13 +874,9 @@ label {
   margin-bottom: 80px;
 }
 
-.new .more {
-  margin-top: 15px;
-}
-
 .new .rec {
   padding: 0 5px;
-  height: 520px;
+  height: 535px;
 }
 
 .new_box {
@@ -937,26 +933,18 @@ label {
   display: inline-block;
 }
 
-#new_more1:checked~.new .nw2 {
-  display: none;
-}
-
+#new_more1:checked~.new .nw1,
 #new_more1:checked~.new .nw3 {
   display: none;
 }
 
-#new_more2:checked~.new .nw3 {
-  display: none;
-}
-
 #new_more:checked~.new .rec {
-  height: 1040px;
+  height: 1070px;
 }
 
 #new_more1:checked~.new .rec {
   height: auto;
 }
-
 
 /***********review*************/
 .review {
