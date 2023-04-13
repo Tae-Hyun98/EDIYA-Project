@@ -892,6 +892,55 @@ label {
   height: 180px;
 }
 
+.new2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding-top: 5px;
+  height: 49px;
+  line-height: 14px;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  letter-spacing: -0.3px;
+}
+
+
+
+.new3 {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  margin: 0 4px;
+  margin-top: 4px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  animation: new_ani 1s infinite;
+}
+
+@keyframes new_ani {
+  0% {
+    transform: rotate(0);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
 .new label {
   display: block;
 }
@@ -1621,7 +1670,7 @@ label {
   }
 
   #new_more:checked~.new .rec {
-    height: 950px;
+    height: 930px;
   }
 
   #new_more1:checked~.new .rec {
