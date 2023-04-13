@@ -642,7 +642,7 @@ label {
 }
 
 .rec {
-  height: 530px;
+  height: 535px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -701,7 +701,7 @@ label {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   padding-top: 5px;
-  height: 55px;
+  height: 49px;
   line-height: 14px;
   font-size: 0.85rem;
   overflow: hidden;
@@ -841,14 +841,14 @@ label {
 #more_chk3:checked~.sheet .rec_sad,
 #more_chk6:checked~.sheet .rec_gift_item,
 #more_chk9:checked~.sheet .rec_angry {
-  height: 795px;
+  height: 1070px;
 }
 
 #more_chk1:checked~.sheet .rec_happy,
 #more_chk4:checked~.sheet .rec_sad,
 #more_chk7:checked~.sheet .rec_gift_item,
 #more_chk10:checked~.sheet .rec_angry {
-  height: 1335px;
+  height: 1340px;
 }
 
 #more_chk2:checked~.sheet .rec_happy,
@@ -927,6 +927,10 @@ label {
 
 .new label {
   display: block;
+}
+
+.new_box .pa {
+  height: 55px;
 }
 
 .mw {
@@ -1140,7 +1144,7 @@ label {
 .all_eve,
 .all_coff,
 .all_drink {
-  height: 826px;
+  height: 805px;
 }
 
 .all_box {
