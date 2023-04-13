@@ -694,6 +694,7 @@ label {
   text-align: center;
   background-color: #173C86;
   color: white;
+  border-radius: 5px;
 }
 
 .pa {
@@ -897,12 +898,13 @@ label {
 
 .mw {
   display: inline-block;
-  width: 110px;
+  width: 100px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   background-color: #173C86;
   color: white;
+  border-radius: 5px;
 }
 
 .nw2,
@@ -1205,7 +1207,7 @@ label {
 }
 
 #more_ra2:checked~.all_eve {
-  height: 2150px;
+  height: 2145px;
 }
 
 #more_ra3:checked~.all_eve {
@@ -2563,6 +2565,20 @@ label {
   .all_box:nth-child(15),
   .all_box:nth-child(20) {
     margin-right: 0;
+  }
+
+  .all_eve,
+  .all_coff,
+  .all_drink {
+    height: 1025px;
+  }
+
+  #more_ra1:checked~.all_eve {
+    height: 1368px;
+  }
+
+  #more_ra4:checked~.all_eve {
+    height: 1025px;
   }
 
   .footer_inner {
