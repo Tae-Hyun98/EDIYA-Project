@@ -69,7 +69,7 @@ label {
 
 .popup_img img {
   width: 100%;
-  height: 350px;
+  height: 370px;
   border-radius: 40px 40px 0 0;
 }
 
@@ -109,7 +109,7 @@ label {
 /**********sub_popup***********/
 .popup_sub {
   position: fixed;
-  top: 20%;
+  top: 70px;
   left: 20px;
   width: 55%;
   z-index: 9999;
@@ -590,11 +590,11 @@ label {
 }
 
 .best_slide .slick-next {
-  right: 10px;
+  right: 2px;
 }
 
 .best_slide .slick-prev {
-  right: 50px;
+  right: 35px;
 }
 
 .best_slide .slick-next::before {
@@ -731,7 +731,6 @@ label {
   background-color: yellowgreen;
   color: white;
   font-weight: bold;
-  text-decoration: underline 2px solid #fff;
 }
 
 #tab1:checked~.recommand .sheet .happy,
@@ -1111,6 +1110,8 @@ label {
   display: none;
   flex-wrap: wrap;
   overflow: hidden;
+  height: 800px;
+  transition: all 0.3s;
 }
 
 .all_box {
@@ -1128,16 +1129,11 @@ label {
   letter-spacing: -0.4px;
 }
 
-.all_sheet {
-  height: 800px;
-  transition: all 0.3s;
-}
-
-.all_box .la_more {
+.la_more {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .la_more a {
@@ -1148,6 +1144,7 @@ label {
   text-align: center;
   background-color: #173C86;
   color: white;
+  border-radius: 5px;
 }
 
 .la_more a label {
@@ -1155,7 +1152,8 @@ label {
 }
 
 .la_more .nw2,
-.la_more .nw3 {
+.la_more .nw3,
+.la_more .nw4 {
   display: none;
 }
 
@@ -1166,21 +1164,26 @@ label {
   display: none;
 }
 
-#more_ra1:checked~.all_sheet {
-  height: 1066px;
-}
-
 #more_ra1:checked~.la_more .nw2,
-#more_ra2:checked~.la_more .nw3 {
+#more_ra2:checked~.la_more .nw3,
+#more_ra3:checked~.la_more .nw4 {
   display: inline-block;
 }
 
-#more_ra2:checked~.all_sheet {
+#more_ra1:checked~.all_eve {
   height: 1610px;
 }
 
-#more_ra3:checked~.all_sheet {
-  height: auto;
+#more_ra2:checked~.all_eve {
+  height: 2150px;
+}
+
+#more_ra3:checked~.all_eve {
+  height: 3250px;
+}
+
+#more_ra4:checked~.all_eve {
+  height: 800px;
 }
 
 #more_ra1:checked~.la_more .nw1,
