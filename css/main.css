@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
 
 * {
@@ -546,23 +546,14 @@ label {
   transition: all 0.3s;
 }
 
-.best_box .pa {
-  padding-top: 5px;
-  letter-spacing: 0.3px;
-  font-size: 0.9rem;
-  line-height: 15px;
-  height: 55px;
-  font-weight: 400;
-}
-
 .price {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .price i {
-  padding-right: 10px;
+  margin-right: 10px;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -616,12 +607,11 @@ label {
 
 /********recommand************/
 .recommand {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .hash {
   font-size: 1.2rem;
-  padding-bottom: 2px;
 }
 
 .bold {
@@ -644,7 +634,8 @@ label {
   line-height: 50px;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .sheet {
@@ -686,12 +677,9 @@ label {
 
 .more {
   width: 100%;
+  height: auto;
+  margin: 10px 0;
   text-align: center;
-  overflow: hidden;
-}
-
-.sheet label {
-  display: block;
 }
 
 .op,
@@ -701,7 +689,6 @@ label {
   width: 100px;
   height: 40px;
   line-height: 40px;
-  margin-top: 10px;
   text-align: center;
   background-color: #173C86;
   color: white;
@@ -718,6 +705,32 @@ label {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.best_box .pa {
+  padding-top: 5px;
+  letter-spacing: 0.3px;
+  font-size: 0.9rem;
+  line-height: 16px;
+  height: 55px;
+}
+
+.new_box .pa {
+  height: 55px;
+}
+
+.review_comment .pa {
+  padding-top: 0;
+  height: 110px;
+  font-size: 0.8rem;
+  line-height: 17px;
+  letter-spacing: 0;
+  -webkit-line-clamp: 9999;
+}
+
+.all_box .pa {
   letter-spacing: -0.3px;
 }
 
@@ -940,9 +953,7 @@ label {
   display: block;
 }
 
-.new_box .pa {
-  height: 55px;
-}
+
 
 .mw {
   display: inline-block;
@@ -1042,14 +1053,7 @@ label {
   color: #008BCC;
 }
 
-.review_comment .pa {
-  padding-top: 0;
-  height: 110px;
-  font-size: 0.8rem;
-  line-height: 17px;
-  letter-spacing: 0;
-  -webkit-line-clamp: 9999;
-}
+
 
 .review_comment .prod {
   font-size: 0.8rem;
@@ -1168,9 +1172,7 @@ label {
   height: 180px;
 }
 
-.all_box .pa {
-  letter-spacing: -0.4px;
-}
+
 
 .la_more,
 .la_more_coff,
