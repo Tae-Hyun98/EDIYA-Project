@@ -530,11 +530,11 @@ label {
 }
 
 .best_box {
-  padding: 0px 3px;
+  margin: 0px 3px;
 }
 
 .best_box .product_img img {
-  height: 200px;
+  height: 205px;
 }
 
 .product_img {
@@ -544,7 +544,6 @@ label {
 
 .product_img img {
   width: 100%;
-  scale: 1.1;
   transition: all 0.3s;
 }
 
@@ -554,6 +553,17 @@ label {
   font-size: 0.9rem;
   line-height: 15px;
   height: 55px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price i {
+  padding-right: 10px;
+  font-size: 1.2rem;
 }
 
 .won {
@@ -1148,9 +1158,8 @@ label {
 }
 
 .all_box {
-  width: calc(100% - 50%);
-  height: auto;
-  padding: 0 4px;
+  width: calc(100% - 50% - 10px);
+  margin: 0 5px;
   margin-bottom: 15px;
 }
 
@@ -1172,7 +1181,7 @@ label {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .allm a {
@@ -1848,6 +1857,10 @@ label {
 
   .menu_list {
     left: -1069px;
+  }
+
+  .product_img img {
+    scale: 1.1;
   }
 
   .visual_banner .slick-prev::before,
