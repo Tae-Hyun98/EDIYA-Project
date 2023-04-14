@@ -731,6 +731,7 @@ label {
 
 .all_box .pa {
   letter-spacing: -0.3px;
+  height: 55px;
 }
 
 #tab1,
@@ -1162,7 +1163,7 @@ label {
 .all_eve,
 .all_coff,
 .all_drink {
-  height: 805px;
+  height: 820px;
 }
 
 .all_box {
@@ -1252,11 +1253,11 @@ label {
 }
 
 #more_ra1:checked~.all_eve {
-  height: 1610px;
+  height: 1640px;
 }
 
 #more_ra2:checked~.all_eve {
-  height: 2145px;
+  height: 2195px;
 }
 
 #more_ra3:checked~.all_eve {
@@ -1267,7 +1268,7 @@ label {
 #more_ra4:checked~.all_eve,
 #more_ra7:checked~.all_coff,
 #more_ra11:checked~.all_drink {
-  height: 800px;
+  height: 820px;
 }
 
 #more_ra5:checked~.all_coff {
@@ -1275,11 +1276,11 @@ label {
 }
 
 #more_ra8:checked~.all_drink {
-  height: 1070px;
+  height: 1090px;
 }
 
 #more_ra9:checked~.all_drink {
-  height: 1350px;
+  height: 1370px;
 }
 
 #more_ra10:checked~.all_drink {
@@ -1412,8 +1413,7 @@ label {
 .quick {
   position: fixed;
   bottom: 20px;
-  right: 0;
-  margin-right: 5px;
+  right: 7px;
   z-index: 999;
 }
 
@@ -1424,7 +1424,7 @@ label {
   text-align: center;
   width: 45px;
   height: 45px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 45px;
   background-color: rgba(255, 255, 255, 1);
   margin-bottom: 7px;
@@ -1489,8 +1489,8 @@ label {
     font-size: 2.2rem;
   }
 
-  .best_box {
-    padding: 5px;
+  .best {
+    margin-bottom: 90px;
   }
 
   .best_box .pa {
@@ -1596,7 +1596,7 @@ label {
   #more_chk4:checked~.sheet .rec_sad,
   #more_chk7:checked~.sheet .rec_gift_item,
   #more_chk10:checked~.sheet .rec_angry {
-    height: 910px;
+    height: 925px;
   }
 
   #more_chk2:checked~.sheet .rec_happy,
@@ -1612,14 +1612,21 @@ label {
     font-size: 1rem;
   }
 
+  .new {
+    margin-bottom: 100px;
+  }
+
+  .new_box .pa {
+    height: 60px;
+    font-size: 0.9rem;
+  }
+
   .sheet {
     padding: 10px 5px 0 5px;
   }
 
   .label label {
-    font-size: 1.2rem;
-    height: 50px;
-    line-height: 50px;
+    font-size: 1.3rem;
   }
 
   .visual img {
@@ -1627,7 +1634,11 @@ label {
   }
 
   .rec_box .product_img img {
-    height: 210px;
+    height: 215px;
+  }
+
+  .middle_banner {
+    margin-bottom: 90px;
   }
 
   .sheet div:nth-child(3),
@@ -1701,8 +1712,17 @@ label {
     font-size: 0.8rem;
   }
 
+  .review_slide .slick-arrow {
+    top: 9px;
+  }
+
+  .review_slide .slick-prev::before,
+  .review_slide .slick-next::before {
+    font-size: 30px;
+  }
+
   .all_box {
-    width: calc(100% - 66.6667%);
+    width: calc(100% - 66.6667% - 10px);
     margin-bottom: 20px;
   }
 
@@ -1723,15 +1743,15 @@ label {
   .all_eve,
   .all_coff,
   .all_drink {
-    height: 930px;
+    height: 945px;
   }
 
   #more_ra1:checked~.all_eve {
-    height: 1560px;
+    height: 1575px;
   }
 
   #more_ra2:checked~.all_eve {
-    height: 2200px;
+    height: 2210px;
   }
 
   #more_ra3:checked~.all_eve {
@@ -1739,7 +1759,7 @@ label {
   }
 
   #more_ra5:checked~.all_coff {
-    height: 1245px;
+    height: auto;
   }
 
   #more_ra5:checked~.la_more_coff .nw2,
@@ -1763,7 +1783,7 @@ label {
   #more_ra4:checked~.all_eve,
   #more_ra7:checked~.all_coff,
   #more_ra11:checked~.all_drink {
-    height: 930px;
+    height: 945px;
   }
 
   .search_box {
@@ -1781,7 +1801,21 @@ label {
   }
 
   .bottom_sns {
-    margin: 45px 0;
+    margin: 80px 0;
+  }
+
+  .bottom_sns .sns li a {
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+  }
+
+  .bottom_sns .sns li {
+    margin-right: 15px;
+  }
+
+  .bottom_sns .sns li a i {
+    font-size: 1.6rem;
   }
 
   .mw {
