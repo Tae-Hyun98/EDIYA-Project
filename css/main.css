@@ -677,7 +677,6 @@ label {
 
 .more {
   width: 100%;
-  height: auto;
   margin: 10px 0;
   text-align: center;
 }
@@ -1135,6 +1134,7 @@ label {
 }
 
 #array {
+  border: 1px solid #777;
   text-align: center;
   height: 25px;
 }
@@ -1226,8 +1226,7 @@ label {
 #more_ra1:checked~.la_more .nw2,
 #more_ra2:checked~.la_more .nw3,
 #more_ra3:checked~.la_more .nw4,
-#more_ra5:checked~.la_more_coff .nw2,
-#more_ra6:checked~.la_more_coff .nw4,
+#more_ra5:checked~.la_more_coff .nw4,
 #more_ra8:checked~.la_more_dr .nw2,
 #more_ra9:checked~.la_more_dr .nw3,
 #more_ra10:checked~.la_more_dr .nw4 {
@@ -1272,10 +1271,6 @@ label {
 }
 
 #more_ra5:checked~.all_coff {
-  height: 1070px;
-}
-
-#more_ra6:checked~.all_coff {
   height: auto;
 }
 
@@ -1320,7 +1315,7 @@ label {
 }
 
 .bottom_sns {
-  margin: 60px 0;
+  margin: 50px 0;
 }
 
 .bottom_sns .sns {
@@ -1431,7 +1426,7 @@ label {
   height: 45px;
   font-size: 1.2rem;
   line-height: 45px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   margin-bottom: 7px;
 }
 
@@ -2477,7 +2472,6 @@ label {
 }
 
 
-
 @media(min-width:1274px) {
   .popup {
     left: 10%;
@@ -2488,27 +2482,17 @@ label {
     right: 15%;
   }
 
-  .header .header_inner {
-    width: 1274px;
-    margin: 0 auto;
-  }
-
   .header .logo h1 {
     font-size: 2.8rem;
   }
 
-  .lnb_inner {
+  .inner {
     width: 1274px;
     margin: 0 auto;
   }
 
   .lnb_pc ul li {
     width: 182px;
-  }
-
-  .inner_box {
-    width: 1274px;
-    margin: 0 auto;
   }
 
   .down {
@@ -2536,11 +2520,6 @@ label {
   .visual_banner .slick-next::before {
     font-size: 35px;
     color: black;
-  }
-
-  .content .content_inner {
-    width: 1274px;
-    margin: 0 auto;
   }
 
   .best_box .product_img img {
@@ -2638,8 +2617,6 @@ label {
   }
 
   .footer_inner {
-    width: 1274px;
-    margin: 0 auto;
     overflow: hidden;
   }
 }
