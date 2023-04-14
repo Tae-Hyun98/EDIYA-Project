@@ -1146,6 +1146,7 @@ label {
 .all_sheet {
   overflow: hidden;
   margin-top: 15px;
+  margin-bottom: 60px;
 }
 
 .all_eve,
@@ -1319,9 +1320,7 @@ label {
 }
 
 .bottom_sns {
-  margin: 30px 0;
-  height: 60px;
-  line-height: 60px;
+  margin: 60px 0;
 }
 
 .bottom_sns .sns {
