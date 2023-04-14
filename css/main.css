@@ -530,7 +530,7 @@ label {
 }
 
 .best_box {
-  margin: 0px 3px;
+  margin: 0px 4px;
 }
 
 .best_box .product_img img {
@@ -564,6 +564,7 @@ label {
 .price i {
   padding-right: 10px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .won {
