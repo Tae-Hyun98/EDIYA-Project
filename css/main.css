@@ -466,8 +466,8 @@ label {
   font-size: 0;
   line-height: 0;
   border: none;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-color: white;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -493,7 +493,6 @@ label {
 .visual_banner .slick-prev::before {
   content: "\f053";
   font-family: "Font Awesome 5 Free";
-  /* visibility: visible; */
   font-weight: bold;
   font-size: 20px;
   color: #fff;
@@ -534,7 +533,7 @@ label {
 }
 
 .best_box .product_img img {
-  height: 205px;
+  height: 195px;
 }
 
 .product_img {
@@ -553,6 +552,7 @@ label {
   font-size: 0.9rem;
   line-height: 15px;
   height: 55px;
+  font-weight: 400;
 }
 
 .price {
