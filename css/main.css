@@ -894,7 +894,6 @@ label {
 
 
 /***************new***************/
-
 .new {
   margin-bottom: 80px;
 }
@@ -952,8 +951,6 @@ label {
 .new label {
   display: block;
 }
-
-
 
 .mw {
   display: inline-block;
@@ -1029,14 +1026,14 @@ label {
   padding: 5px;
 }
 
-.nick {
+.review .nick {
   font-size: 0.6rem;
   color: #999;
   font-weight: normal;
   padding-bottom: 5px;
 }
 
-.pa_box {
+.review .pa_box {
   overflow: hidden;
   padding-bottom: 5px;
 }
@@ -1052,8 +1049,6 @@ label {
   line-height: 20px;
   color: #008BCC;
 }
-
-
 
 .review_comment .prod {
   font-size: 0.8rem;
@@ -1109,16 +1104,12 @@ label {
 }
 
 
-
 /**************all****************/
-
 .all_product {
   overflow: hidden;
 }
 
 .all_tab {
-  float: left;
-  overflow: hidden;
   font-size: 0;
   margin-left: 5px;
 }
@@ -1136,8 +1127,19 @@ label {
   border: none;
 }
 
+.tab_nav {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  line-height: 25px;
+}
+
+#array {
+  text-align: center;
+  height: 25px;
+}
+
 .all_select {
-  text-align: right;
   margin-right: 5px;
 }
 
@@ -1171,8 +1173,6 @@ label {
 .all_box .product_img img {
   height: 180px;
 }
-
-
 
 .la_more,
 .la_more_coff,
@@ -1351,6 +1351,10 @@ label {
 
 .bottom_sns .sns li a i {
   font-size: 1.1rem;
+}
+
+.bottom_banner img {
+  width: 100%;
 }
 
 /**************footer**************/
