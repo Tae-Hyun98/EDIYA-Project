@@ -451,10 +451,14 @@ label {
   padding-left: 5px;
 }
 
-.event_list {
-  padding: 5px;
+.event_border {
   border-top: 2px solid black;
-  margin: 0 5px;
+  border-bottom: 2px solid black;
+}
+
+.event_list {
+  padding: 10px 5px;
+  margin: 10px 5px;
 }
 
 .event_sel i {
