@@ -522,6 +522,7 @@ label {
   font-size: 1.9rem;
   margin-bottom: 15px;
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .best {
@@ -550,6 +551,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 25px;
 }
 
 .price i {
@@ -1142,6 +1144,7 @@ label {
   border: 1px solid #777;
   text-align: center;
   height: 25px;
+  font-weight: bold;
 }
 
 .all_select {
@@ -1747,7 +1750,7 @@ label {
   .all_eve,
   .all_coff,
   .all_drink {
-    height: 945px;
+    height: 960px;
   }
 
   #more_ra1:checked~.all_eve {
@@ -1787,7 +1790,7 @@ label {
   #more_ra4:checked~.all_eve,
   #more_ra7:checked~.all_coff,
   #more_ra11:checked~.all_drink {
-    height: 945px;
+    height: 960px;
   }
 
   .search_box {
@@ -1809,9 +1812,8 @@ label {
   }
 
   .bottom_sns .sns li a {
-    width: 60px;
-    height: 60px;
-    line-height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .bottom_sns .sns li {
@@ -1820,6 +1822,7 @@ label {
 
   .bottom_sns .sns li a i {
     font-size: 1.6rem;
+    line-height: 50px;
   }
 
   .mw {
@@ -1909,6 +1912,19 @@ label {
     visibility: visible;
   }
 
+  .won {
+    font-size: 1.1rem;
+  }
+
+  .price i {
+    font-size: 1.4rem;
+    transition: all 0.3s;
+  }
+
+  .price i:hover {
+    color: red;
+  }
+
   .best {
     margin-bottom: 110px;
   }
@@ -1946,10 +1962,10 @@ label {
     height: auto;
   }
 
-  .best_box:hover .product_img img,
-  .rec_box:hover .product_img img,
-  .new_box:hover .product_img img,
-  .all_box:hover .product_img img {
+  .best_box .product_img:hover img,
+  .rec_box .product_img:hover img,
+  .new_box .product_img:hover img,
+  .all_box .product_img:hover img {
     scale: 1;
     border: 1px solid #008BCC;
   }
@@ -1958,12 +1974,28 @@ label {
     margin-bottom: 110px;
   }
 
+  .new .rec {
+    height: 665px;
+  }
+
   .new {
     margin-bottom: 110px;
   }
 
+  .new .product_img img {
+    height: 235px;
+  }
+
+  #new_more:checked~.new .rec {
+    height: 1000px;
+  }
+
   .recommand {
     margin-bottom: 110px;
+  }
+
+  .review_img img {
+    height: 240px;
   }
 
   .review_slide .slick-arrow {
@@ -1976,6 +2008,14 @@ label {
 
   .review_slide .slick-next {
     right: 13%;
+  }
+
+  .all_product {
+    margin-bottom: 110px;
+  }
+
+  .all_sheet {
+    margin-bottom: 0;
   }
 
   .all_box {
@@ -2008,7 +2048,7 @@ label {
   }
 
   #more_ra2:checked~.all_eve {
-    height: 1615px;
+    height: 1630px;
   }
 
   #more_ra3:checked~.all_eve {
@@ -2317,7 +2357,15 @@ label {
   }
 
   .best_box .product_img img {
-    height: 230px;
+    height: 240px;
+  }
+
+  .content h1 {
+    margin-bottom: 20px;
+  }
+
+  .content .pa {
+    font-size: 0.95rem;
   }
 
   .rec_box {
@@ -2325,7 +2373,7 @@ label {
   }
 
   .rec {
-    height: 340px;
+    height: 350px;
   }
 
   .review_comment .prod {
@@ -2389,7 +2437,7 @@ label {
   #more_chk3:checked~.sheet .rec_sad,
   #more_chk6:checked~.sheet .rec_gift_item,
   #more_chk9:checked~.sheet .rec_angry {
-    height: 700px;
+    height: 710px;
   }
 
   #more_chk1:checked~.sheet .rec_happy,
@@ -2407,7 +2455,7 @@ label {
   }
 
   .new .rec {
-    height: 710px;
+    height: 720px;
   }
 
   .rec_box .product_img img {
@@ -2415,11 +2463,7 @@ label {
   }
 
   #new_more:checked~.new .rec {
-    height: 1020px;
-  }
-
-  #new_more1:checked~.new .rec {
-    height: 1160px;
+    height: auto;
   }
 
   #new_more:checked~.new .nw2 {
@@ -2431,7 +2475,7 @@ label {
   }
 
   .review_box {
-    height: 485px;
+    height: 500px;
   }
 
   .review_img img {
@@ -2448,8 +2492,12 @@ label {
   }
 
   .all_box {
-    width: calc(100% - 80%);
+    width: calc(100% - 80% - 10px);
     margin-bottom: 25px;
+  }
+
+  .all_box .product_img img {
+    height: 235px;
   }
 
   .all_tab label {
@@ -2460,11 +2508,11 @@ label {
   .all_eve,
   .all_coff,
   .all_drink {
-    height: 970px;
+    height: 1035px;
   }
 
   #more_ra1:checked~.all_eve {
-    height: 1290px;
+    height: 1380px;
   }
 
   #more_ra2:checked~.all_eve {
@@ -2472,7 +2520,7 @@ label {
   }
 
   #more_ra4:checked~.all_eve {
-    height: 970px;
+    height: 1035px;
   }
 
   #more_ra2:checked~.la_more .nw3 {
@@ -2481,6 +2529,14 @@ label {
 
   #more_ra2:checked~.la_more .nw4 {
     display: inline-block;
+  }
+
+  .bottom_banner {
+    margin-bottom: 150px;
+  }
+
+  .bottom_banner img {
+    height: 340px;
   }
 
   .la_more_dr a {
@@ -2630,7 +2686,6 @@ label {
   }
 
   .review_box {
-    height: 475px;
     margin: auto;
     margin-right: 10px;
   }
@@ -2665,7 +2720,7 @@ label {
   .all_box {
     width: 246.8px;
     padding: 0;
-    margin-right: 10px;
+    margin: 0 10px 20px 0;
   }
 
   .all_box .product_img img {
