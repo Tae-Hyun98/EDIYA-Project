@@ -1143,7 +1143,7 @@ label {
     right: 21px;
   }
 
-  .event_outer {
+  .event_outer,.footer_inner {
     width: 1274px;
     margin: 0 auto;
   }
