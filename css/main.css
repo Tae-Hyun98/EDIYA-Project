@@ -83,27 +83,33 @@ label {
   color: #fff;
 }
 
-.popup_close p {
+.popup_close .today {
   float: left;
-  cursor: pointer;
 }
 
-.popup_close p i {
+.popup_close .today i {
   font-size: 1rem;
-  color: #ccc;
+  color: white;
+  border-radius: 50%;
 }
 
-.popup_close label {
+.popup_close .popup_cl {
   float: right;
   padding-right: 2%;
 }
 
-#popup_chk {
+#popup_chk,
+#today_chk {
   display: none;
 }
 
 #popup_chk:checked~.popup {
   display: none;
+}
+
+#today_chk:checked~.popup .popup_close .today i {
+  color: black;
+  background-color: #ccc;
 }
 
 /**********sub_popup***********/
@@ -558,6 +564,7 @@ label {
   margin-right: 10px;
   font-size: 1.2rem;
   cursor: pointer;
+  color: #888;
 }
 
 .won {
@@ -592,6 +599,8 @@ label {
   display: block;
   font-size: 1.4rem;
   border-radius: 5px;
+  background-color: #173C86;
+
 }
 
 .best_slide .slick-next {
@@ -638,6 +647,8 @@ label {
   transition: all 0.3s;
   font-size: 1.1rem;
   font-weight: 500;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .sheet {
@@ -760,8 +771,8 @@ label {
 #tab2:checked~.recommand .label .sa,
 #tab3:checked~.recommand .label .sp,
 #tab4:checked~.recommand .label .ang {
-  background-color: yellowgreen;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -890,6 +901,7 @@ label {
 
 .middle_banner {
   width: 100%;
+  background-color: #e4e1dc;
   margin-bottom: 70px;
 }
 
@@ -1353,6 +1365,10 @@ label {
 
 .bottom_sns .sns li a i {
   font-size: 1.1rem;
+}
+
+.bottom_banner {
+  background-color: #feefed;
 }
 
 .bottom_banner img {
