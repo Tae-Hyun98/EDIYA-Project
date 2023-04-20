@@ -16,6 +16,7 @@
 
   <script>
     $(function () {
+      //헤더픽스
       $(window).scroll(function () {
         if (window.innerWidth > 1070) {
           $(function () {
@@ -27,15 +28,12 @@
           });
         } else {
           $('.lnb_pc').removeClass('fix');
-          if ($(window).scrollTop() >= 135) {
+          if ($(window).scrollTop() >= 115) {
             $('.header .fix_box').addClass('fixed');
           } else {
             $('.header .fix_box').removeClass('fixed');
           };
         };
-
-        //모바일 헤더픽스
-
       });
 
       $('.up').click(function (e) {
