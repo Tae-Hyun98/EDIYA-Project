@@ -23,38 +23,39 @@
         }, 500);
       });
 
-      /*  $('.quick').css('top', $(window).height() - $('.quick').height());
-       $(window).scroll(function () {
-         let point = $(this).scrollTop() + ($(window).height() - $('.quick').height());
-         $('.quick').stop().animate({
-           top: point
-         }, 100);
-       }); */
       //퀵메뉴
       $(window).resize(function () {
-        if (window.innerWidth < 1274) {
-          $(function () {
-            $('.quick').css('top', $(window).height() - $('.quick').height());
-            $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() - $('.quick').height());
-              $('.quick').stop().animate({
-                top: point
-              }, 100);
-            });
-          });
-        } else {
+        if (window.innerWidth > 1274) {
           $(function () {
             $('.quick').css('top', $(window).height() / 2 - $('.quick').height() / 2);
             $(window).scroll(function () {
               let point = $(this).scrollTop() + ($(window).height() / 2 - $('.quick').height() / 2);
               $('.quick').stop().animate({
                 top: point
-              }, 100);
+              }, 200);
+            });
+          });
+        } else {
+          $(function () {
+            $('.quick').css('top', $(window).height() / 1.02 - $('.quick').height() * 1.02);
+            $(window).scroll(function () {
+              let point = $(this).scrollTop() + ($(window).height() / 1.02 - $('.quick').height() *
+                1.02);
+              $('.quick').stop().animate({
+                top: point
+              }, 200);
             });
           });
         }
       }).resize();
 
+      $(window).scroll(function () {
+        if ($(window).scrollTop >= 135) {
+          $('.lnf').addClass('fix');
+        } else {
+          $('.lnf').removeClass('fix');
+        }
+      });
     });
   </script>
 </head>
@@ -132,7 +133,7 @@
     </div>
   </header>
 
-  <div class="fix">
+  <div class="lnf">
     <div class="lnb_pc">
       <div class="lnb_inner inner">
         <ul class="lnb_main">
