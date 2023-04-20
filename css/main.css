@@ -156,11 +156,24 @@ label {
 .fix {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 9999;
 }
 
-.header {
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.fix_box {
+  width: 100%;
   background-color: #fff;
+}
+
+.lnb_pc {
+  width: 100%;
 }
 
 .header .logo h1 {
@@ -2215,7 +2228,7 @@ label {
     z-index: 1;
   }
 
-  .lnb_pc ul li a:hover {
+  .lnb_pc ul.lnb_main li a:hover {
     background-color: #173C86;
     color: white;
   }
@@ -2223,9 +2236,9 @@ label {
   .down {
     position: absolute;
     width: 14.28%;
-    overflow: hidden;
     height: 0;
     transition: all 0.3s;
+    z-index: 9999;
   }
 
   .lnb_pc .down li {
@@ -2270,7 +2283,7 @@ label {
     height: 120px;
   }
 
-  .lnb_pc .down li a:hover {
+  .lnb_pc ul.down li a:hover {
     background-color: cornflowerblue;
   }
 

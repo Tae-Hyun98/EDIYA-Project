@@ -16,12 +16,35 @@
 
   <script>
     $(function () {
+      $(window).scroll(function () {
+        if (window.innerWidth > 1070) {
+          $(function () {
+            if ($(window).scrollTop() >= 135) {
+              $('.lnb_pc').addClass('fix');
+            } else {
+              $('.lnb_pc').removeClass('fix');
+            };
+          });
+        } else {
+          $('.lnb_pc').removeClass('fix');
+          if ($(window).scrollTop() >= 135) {
+            $('.header .fix_box').addClass('fixed');
+          } else {
+            $('.header .fix_box').removeClass('fixed');
+          };
+        };
+
+        //모바일 헤더픽스
+
+      });
+
       $('.up').click(function (e) {
         e.preventDefault();
         $('html, body').stop().animate({
           scrollTop: 0
         }, 500);
       });
+
 
       //퀵메뉴
       $(window).resize(function () {
@@ -49,13 +72,6 @@
         }
       }).resize();
 
-      $(window).scroll(function () {
-        if ($(window).scrollTop >= 135) {
-          $('.lnf').addClass('fix');
-        } else {
-          $('.lnf').removeClass('fix');
-        }
-      });
     });
   </script>
 </head>
@@ -116,76 +132,76 @@
         </ul>
       </div>
 
-      <div class="menu">
-        <label for="menu_chk">
-          <i class="fas fa-bars"></i>
-        </label>
-      </div>
+      <div class="fix_box">
+        <div class="menu">
+          <label for="menu_chk">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
 
-      <div class="logo">
-        <h1><a href="./index.html">EDIYA COFFEE</a></h1>
-      </div>
-
-      <div class="search_box">
-        <i class="fas fa-search"></i>
-        <input type="search" placeholder="검색어를 입력해주세요.">
+        <div class="logo">
+          <h1><a href="./index.html">EDIYA COFFEE</a></h1>
+        </div>
+        <div class="search_box">
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="검색어를 입력해주세요.">
+        </div>
       </div>
     </div>
+
   </header>
 
-  <div class="lnf">
-    <div class="lnb_pc">
-      <div class="lnb_inner inner">
-        <ul class="lnb_main">
-          <li><a href="#">베스트</a></li>
-          <li>
-            <a href="#">커피</a>
-            <ul class="coffee_pc down">
-              <li><a href="#!">홀빈원두</a></li>
-              <li><a href="#!">핸드드립</a></li>
-              <li><a href="#!">캡슐커피</a></li>
-              <li><a href="#!">커피머신</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">스틱커피</a>
-            <ul class="stick_pc down">
-              <li><a href="#!">아메리카노</a></li>
-              <li><a href="#!">라떼</a></li>
-              <li><a href="#!">커피믹스</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">음료·티</a>
-            <ul class="tea_pc down">
-              <li><a href="#!">아이스음료</a></li>
-              <li><a href="#!">콤부차</a></li>
-              <li><a href="#!">전통차</a></li>
-              <li><a href="#!">블렌딩티</a></li>
-              <li><a href="#!">컵커피</a></li>
-            </ul>
-          </li>
-          <li><a href="#!">케이크</a></li>
-          <li>
-            <a href="#!">선물세트</a>
-            <ul class="gift_pc down">
-              <li><a href="#!">커피</a></li>
-              <li><a href="#!">음료 · 티</a></li>
-              <li><a href="#!">커피믹스</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">커뮤니티</a>
-            <ul class="comu_pc down">
-              <li><a href="#!">공지사항</a></li>
-              <li><a href="subpage.html" class="eb">EVENT</a></li>
-              <li><a href="#!">Q & A</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+  <nav class="lnb_pc">
+    <div class="lnb_inner inner">
+      <ul class="lnb_main">
+        <li><a href="#">베스트</a></li>
+        <li>
+          <a href="#">커피</a>
+          <ul class="coffee_pc down">
+            <li><a href="#!">홀빈원두</a></li>
+            <li><a href="#!">핸드드립</a></li>
+            <li><a href="#!">캡슐커피</a></li>
+            <li><a href="#!">커피머신</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">스틱커피</a>
+          <ul class="stick_pc down">
+            <li><a href="#!">아메리카노</a></li>
+            <li><a href="#!">라떼</a></li>
+            <li><a href="#!">커피믹스</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">음료·티</a>
+          <ul class="tea_pc down">
+            <li><a href="#!">아이스음료</a></li>
+            <li><a href="#!">콤부차</a></li>
+            <li><a href="#!">전통차</a></li>
+            <li><a href="#!">블렌딩티</a></li>
+            <li><a href="#!">컵커피</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">케이크</a></li>
+        <li>
+          <a href="#!">선물세트</a>
+          <ul class="gift_pc down">
+            <li><a href="#!">커피</a></li>
+            <li><a href="#!">음료 · 티</a></li>
+            <li><a href="#!">커피믹스</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">커뮤니티</a>
+          <ul class="comu_pc down">
+            <li><a href="#!">공지사항</a></li>
+            <li><a href="subpage.html" class="eb">EVENT</a></li>
+            <li><a href="#!">Q & A</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
   <!-- 모바일 메뉴 라디오 -->
   <input type="radio" name="ln_radio" id="drop_ra">
