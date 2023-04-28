@@ -36,10 +36,18 @@
         };
       });
 
+      //up, down 클릭
       $('.up').click(function (e) {
         e.preventDefault();
         $('html, body').stop().animate({
           scrollTop: 0
+        }, 500);
+      });
+
+      $('.down').click(function (e) {
+        e.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: $(document).height()
         }, 500);
       });
 
@@ -56,20 +64,38 @@
               }, 200);
             });
           });
-        } else {
+        } else if (window.innerWidth > 769) {
           $(function () {
-            $('.quick').css('top', $(window).height() / 1.02 - $('.quick').height() * 1.02);
+            $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
             $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() / 1.02 - $('.quick').height() *
-                1.02);
+              let point = $(this).scrollTop() + ($(window).height() / 1.04 - $('.quick').height() *
+                1.04);
               $('.quick').stop().animate({
                 top: point
               }, 200);
             });
           });
+        } else {
+          $(function () {
+            $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
+            $(window).scroll(function () {
+              let point = $(this).scrollTop() + ($(window).height() / 1.02 - $('.quick').height() *
+                1.02);
+              $('.quick').stop().animate({
+                top: point
+              }, 0);
+            });
+          });
         }
       }).resize();
-
+      let delay = 500;
+      let timer = null;
+      $(window).on('resize', function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          document.location.reload();
+        }, delay);
+      });
     });
   </script>
 </head>
@@ -2887,7 +2913,7 @@
   </div>
 
   <!-- 푸터영역 -->
-  <footer class="footer">
+  <footer id="bottom" class="footer">
     <div class="footer_inner inner">
       <p class="fl">EDIYA COFFEE</p>
       <div class="footer_right">
@@ -2917,21 +2943,28 @@
 
   <!-- 퀵메뉴 -->
   <div class="quick">
-    <a href="#!" class="blind">
-      <i class="fas fa-user"></i>
-      <p class="dis">마이페이지</p>
-    </a>
-    <a href="#!" class="blind">
-      <i class="fas fa-shopping-cart"></i>
-      <p class="dis">장바구니</p>
-    </a>
-    <a href="#!" class="blind">
-      <i class="far fa-eye"></i>
-      <p class="dis">최근본상품</p>
-    </a>
-    <a href="#top" class="up">
-      <i class="fas fa-chevron-up"></i>
-    </a>
+    <div class="quick_nav">
+      <a href="#!" class="qu my">
+        <i class="fas fa-user"></i>
+        <p class="dis">마이페이지</p>
+      </a>
+      <a href="#!" class="qu cart">
+        <i class="fas fa-shopping-cart"></i>
+        <p class="dis">장바구니</p>
+      </a>
+      <a href="#!" class="qu resent">
+        <i class="far fa-eye"></i>
+        <p class="dis">최근본상품</p>
+      </a>
+      <div class="quick_arrow">
+        <a href="#top" class="up">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+        <a href="#bottom" class="down">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
   </div>
 
 

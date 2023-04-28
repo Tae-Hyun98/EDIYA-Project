@@ -1448,26 +1448,35 @@ label {
 /***********quick************/
 .quick {
   position: absolute;
-  height: auto;
-  right: 7px;
+  right: 5px;
   z-index: 999;
+}
+
+.quick_nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .quick a {
   display: block;
   border: 1px solid #ccc;
   border-radius: 50%;
-  text-align: center;
-  width: 45px;
-  height: 45px;
-  font-size: 1.3rem;
-  line-height: 45px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.35rem;
+  line-height: 50px;
   background-color: white;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
+  text-align: center;
 }
 
-.quick a:last-child {
+.quick .quick_arrow a:first-child{
   margin-bottom: 0px;
+}
+
+.quick .down {
+  display: none;
 }
 
 .quick .dis {
@@ -1894,10 +1903,12 @@ label {
     margin-bottom: 5px;
   }
 
-  .quick .up {
+  .quick .up,
+  .quick .down {
     line-height: 25px;
     height: 30px;
     padding-top: 5px;
+    display: block;
   }
 
   .quick a i {
@@ -2623,10 +2634,11 @@ label {
   }
 
   .quick {
-    right: 15px;
+    right: 10px;
   }
 
-  .quick .up {
+  .quick .up,
+  .quick .down {
     height: 30px;
     line-height: 30px;
   }
@@ -2780,7 +2792,39 @@ label {
     overflow: hidden;
   }
 
-  .quick {
-    right: 5px;
+  .quick_nav {
+    width: 60px;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  .quick a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .quick .dis {
+    display: none;
+  }
+
+  .quick_arrow {
+    margin-top: 10px;
+  }
+
+  .quick:hover .quick_nav {
+    width: 140px;
+  }
+
+  .quick:hover .quick_nav a {
+    width: 140px;
+    justify-content: space-around;
+  }
+
+  .quick:hover .quick_nav a .dis {
+    display: block;
+    font-size: 1.2rem;
   }
 }
