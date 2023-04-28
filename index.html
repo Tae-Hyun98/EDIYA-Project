@@ -64,6 +64,14 @@
               }, 200);
             });
           });
+          let delay = 500;
+          let timer = null;
+          $(window).on('resize', function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+              document.location.reload();
+            }, delay);
+          });
         } else if (window.innerWidth > 769) {
           $(function () {
             $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
@@ -75,12 +83,20 @@
               }, 200);
             });
           });
+          let delay = 500;
+          let timer = null;
+          $(window).on('resize', function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+              document.location.reload();
+            }, delay);
+          });
         } else {
           $(function () {
             $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
             $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() / 1.02 - $('.quick').height() *
-                1.02);
+              let point = $(this).scrollTop() + ($(window).height() / 1.01 - $('.quick').height() *
+                1.01);
               $('.quick').stop().animate({
                 top: point
               }, 0);
@@ -88,14 +104,6 @@
           });
         }
       }).resize();
-      let delay = 500;
-      let timer = null;
-      $(window).on('resize', function () {
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          document.location.reload();
-        }, delay);
-      });
     });
   </script>
 </head>
@@ -2960,7 +2968,7 @@
         <a href="#top" class="up">
           <i class="fas fa-chevron-up"></i>
         </a>
-        <a href="#bottom" class="down">
+        <a href="#bottom" class="bot">
           <i class="fas fa-chevron-down"></i>
         </a>
       </div>
