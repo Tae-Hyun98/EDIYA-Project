@@ -1471,11 +1471,11 @@ label {
   text-align: center;
 }
 
-.quick .quick_arrow a:first-child{
+.quick .quick_arrow a:first-child {
   margin-bottom: 0px;
 }
 
-.quick .down {
+.quick .bot {
   display: none;
 }
 
@@ -1904,7 +1904,7 @@ label {
   }
 
   .quick .up,
-  .quick .down {
+  .quick .bot {
     line-height: 25px;
     height: 30px;
     padding-top: 5px;
@@ -2638,7 +2638,7 @@ label {
   }
 
   .quick .up,
-  .quick .down {
+  .quick .bot {
     height: 30px;
     line-height: 30px;
   }
@@ -2793,7 +2793,7 @@ label {
   }
 
   .quick_nav {
-    width: 60px;
+    width: 55px;
     transition: all 0.3s;
     overflow: hidden;
   }
@@ -2804,6 +2804,10 @@ label {
     justify-content: center;
     margin: 0;
     padding-top: 0;
+  }
+
+  .quick .cart p {
+    letter-spacing: 0.5px;
   }
 
   .quick .dis {
@@ -2825,6 +2829,6 @@ label {
 
   .quick:hover .quick_nav a .dis {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
