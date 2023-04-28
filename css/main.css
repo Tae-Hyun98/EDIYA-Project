@@ -2797,26 +2797,26 @@ label {
     overflow: hidden;
   }
 
+  .quick {
+    overflow: hidden;
+    width: 160px;
+    height: 250px;
+    right: 0;
+  }
+
   .quick_nav {
     position: absolute;
-    right: -100px;
+    right: -105px;
     transition: all 0.3s;
   }
 
   .quick a {
-    width: 150px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding-top: 0;
-  }
-
-  .quick {
-    overflow: hidden;
-    width: 150px;
-    height: 250px;
-    right: 0;
   }
 
   .quick_nav:hover {
@@ -2829,7 +2829,7 @@ label {
   }
 
   .quick .cart p {
-    letter-spacing: 1.1px;
+    letter-spacing: 1.2px;
   }
 
   .quick .quick_nav a i {
@@ -2846,12 +2846,11 @@ label {
 
   .quick_arrow a {
     padding-top: 2px;
-    padding-left: 17px;
+    padding-left: 19px;
     text-align: left;
   }
 
   .quick .quick_nav a .dis {
-    display: block;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
