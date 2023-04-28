@@ -65,6 +65,29 @@ label {
   left: 0;
   width: 100%;
   z-index: 10000;
+  animation: popani 1.5s 1;
+}
+
+@keyframes popani {
+  0% {
+    bottom: 100%;
+  }
+
+  10% {
+    bottom: 95%;
+  }
+
+  20% {
+    bottom: 100%;
+  }
+
+  30% {
+    bottom: 95%;
+  }
+
+  100% {
+    bottom: 0;
+  }
 }
 
 .popup_img img {
@@ -79,7 +102,7 @@ label {
   background-color: #008BCC;
   overflow: hidden;
   font-size: 0.85rem;
-  padding-left: 5px;
+  padding: 0 10px;
   color: #fff;
 }
 
