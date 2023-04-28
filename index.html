@@ -76,8 +76,8 @@
           $(function () {
             $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
             $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() / 1.01 - $('.quick').height() *
-                1.01);
+              let point = $(this).scrollTop() + ($(window).height() / 1.03 - $('.quick').height() *
+                1.03);
               $('.quick').stop().animate({
                 top: point
               }, 200);
@@ -93,6 +93,20 @@
           });
         }
       }).resize();
+    });
+
+
+    //팝업
+    $(window).show(function () {
+      if (window.innerWidth > 601) {
+        $(function () {
+          if ($(this).scrollTop() === $('.header').offset().top) {
+            $('.popup').animate({
+              left: 60
+            }, 400);
+          }
+        });
+      }
     });
   </script>
 </head>
@@ -2879,11 +2893,12 @@
   </div>
 
   <div class="bottom_banner">
-    <div class="inner">
-      <a href="#!">
-        <img src="./img/bottom_banner.png" alt="bottom_banner">
-      </a>
-    </div>
+    <a href="#!">
+      <img src="./img/bottom_banner.png" alt="bottom_banner">
+    </a>
+    <a href="#!">
+      <img src="./img/bottom_banner1.png" alt="bottom_banner">
+    </a>
   </div>
 
   <div class="bottom_sns">

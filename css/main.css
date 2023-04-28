@@ -1308,11 +1308,11 @@ label {
 }
 
 #more_ra1:checked~.all_eve {
-  height: 1640px;
+  height: 1660px;
 }
 
 #more_ra2:checked~.all_eve {
-  height: 2195px;
+  height: 2215px;
 }
 
 #more_ra3:checked~.all_eve {
@@ -1404,7 +1404,12 @@ label {
 }
 
 .bottom_banner {
-  background-color: #feefed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom_banner a {
+  width: 100%;
 }
 
 .bottom_banner img {
@@ -1513,10 +1518,11 @@ label {
   .popup {
     position: fixed;
     width: 390px;
-    left: 50px;
+    left: -800px;
     top: 70px;
     bottom: auto;
     border: 1px solid #625e5e;
+    animation: none
   }
 
   .popup_img img {
@@ -1937,7 +1943,7 @@ label {
 
 @media (min-width:769px) {
   .popup {
-    left: 5%;
+    left: -70%;
   }
 
   .popup_img img {
@@ -2141,6 +2147,14 @@ label {
     height: 110px;
     font-size: 1rem;
     font-weight: 400;
+  }
+
+  .bottom_banner {
+    flex-wrap: nowrap;
+  }
+
+  .bottom_banner img {
+    height: 200px;
   }
 
   .quick {
@@ -2606,7 +2620,7 @@ label {
   }
 
   .bottom_banner img {
-    height: 360px;
+    height: 320px;
   }
 
   .la_more_dr a {
@@ -2675,12 +2689,7 @@ label {
   }
 }
 
-
 @media(min-width:1274px) {
-  .popup {
-    left: 10%;
-  }
-
   .popup_sub {
     width: 300px;
     right: 15%;
