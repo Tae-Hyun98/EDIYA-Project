@@ -76,8 +76,8 @@
           $(function () {
             $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
             $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() / 1.04 - $('.quick').height() *
-                1.04);
+              let point = $(this).scrollTop() + ($(window).height() / 1.01 - $('.quick').height() *
+                1.01);
               $('.quick').stop().animate({
                 top: point
               }, 200);
@@ -90,17 +90,6 @@
             timer = setTimeout(function () {
               document.location.reload();
             }, delay);
-          });
-        } else {
-          $(function () {
-            $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
-            $(window).scroll(function () {
-              let point = $(this).scrollTop() + ($(window).height() / 1.01 - $('.quick').height() *
-                1.01);
-              $('.quick').stop().animate({
-                top: point
-              }, 0);
-            });
           });
         }
       }).resize();

@@ -1447,8 +1447,9 @@ label {
 
 /***********quick************/
 .quick {
-  position: absolute;
+  position: fixed;
   right: 5px;
+  bottom: 15px;
   z-index: 999;
 }
 
@@ -2120,7 +2121,9 @@ label {
   }
 
   .quick {
+    position: absolute;
     right: 7px;
+    bottom: auto;
   }
 
   .quick a {
