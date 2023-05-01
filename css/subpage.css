@@ -59,10 +59,46 @@ label {
 }
 
 /***********header**************/
-.fix {
-  position: sticky;
+.lnb_pc.fix {
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 9999;
+  background-color: #173C86;
+  color: white;
+}
+
+.lnb_pc.fix .lnb_main li a {
+  background-color: #173C86;
+  color: white;
+  transition: none;
+}
+
+.lnb_pc.fix .lnb_main li:hover a {
+  background-color: #fff;
+  color: black;
+}
+
+.lnb_pc.fix .lnb_main li .down li a {
+  background-color: #fff;
+  color: #000;
+}
+
+.lnb_pc.fix .lnb_main li .down li:hover a {
+  background-color: #008BCC;
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.fix_box {
+  width: 100%;
+  background-color: #fff;
 }
 
 .header {
@@ -1143,7 +1179,8 @@ label {
     right: 21px;
   }
 
-  .event_outer,.footer_inner {
+  .event_outer,
+  .footer_inner {
     width: 1274px;
     margin: 0 auto;
   }

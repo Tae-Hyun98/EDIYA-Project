@@ -102,7 +102,7 @@
         $(function () {
           if ($(this).scrollTop() === $('.header').offset().top) {
             $('.popup').animate({
-              left: 60
+              left: 80
             }, 400);
           }
         });
@@ -115,31 +115,34 @@
   <!-- 메인팝업 -->
   <input type="checkbox" id="popup_chk">
   <input type="checkbox" id="today_chk">
+  <input type="checkbox" id="sub_chk">
   <div class="popup">
-    <div class="popup_img">
-      <a href="#!">
-        <img src="./img/popup_img1.jpg" alt="popup_img">
-      </a>
+    <div class="popup_main">
+      <div class="popup_img">
+        <a href="#!">
+          <img src="./img/popup_img1.jpg" alt="popup_img">
+        </a>
+      </div>
+      <div class="popup_close">
+        <label for="today_chk" class="today">
+          <i class="far fa-check-circle"></i> 오늘하루동안 닫을래요
+        </label>
+        <label for="popup_chk" class="popup_cl">닫기 X</label>
+      </div>
     </div>
-    <div class="popup_close">
-      <label for="today_chk" class="today">
-        <i class="far fa-check-circle"></i> 오늘하루동안 닫을래요
-      </label>
-      <label for="popup_chk" class="popup_cl">닫기 X</label>
+    <div class="popup_sub">
+      <div class="popup_des">
+        <p>서브페이지 경로</p>
+        <p>커뮤니티 -> EVENT</p>
+      </div>
+      <div class="popup_sub_close">
+        <label for="sub_chk">닫기 X</label>
+      </div>
     </div>
   </div>
 
-  <!-- 서브페이지 경로팝업 -->
-  <input type="checkbox" id="sub_chk">
-  <div class="popup_sub">
-    <div class="popup_des">
-      <p>서브페이지 경로</p>
-      <p>커뮤니티 -> EVENT</p>
-    </div>
-    <div class="popup_sub_close">
-      <label for="sub_chk">닫기 X</label>
-    </div>
-  </div>
+
+
 
   <!-- 헤더 -->
   <input type="checkbox" id="menu_chk">

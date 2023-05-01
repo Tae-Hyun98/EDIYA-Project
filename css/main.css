@@ -122,11 +122,12 @@ label {
 }
 
 #popup_chk,
-#today_chk {
+#today_chk,
+#sub_chk {
   display: none;
 }
 
-#popup_chk:checked~.popup {
+#popup_chk:checked~.popup .popup_main {
   display: none;
 }
 
@@ -135,12 +136,9 @@ label {
   background-color: #ccc;
 }
 
-/**********sub_popup***********/
 .popup_sub {
-  position: fixed;
-  top: 70px;
-  left: 20px;
-  width: 55%;
+  display: none;
+  width: 100%;
   z-index: 9999;
   border: 1px solid black;
   background-color: #fff;
@@ -167,20 +165,39 @@ label {
   display: block;
 }
 
-#sub_chk {
-  display: none;
-}
-
-#sub_chk:checked~.popup_sub {
+#sub_chk:checked~.popup .popup_sub {
   display: none;
 }
 
 /***********header**************/
-.fix {
+.lnb_pc.fix {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
+  background-color: #173C86;
+  color: white;
+}
+
+.lnb_pc.fix .lnb_main li a {
+  background-color: #173C86;
+  color: white;
+  transition: none;
+}
+
+.lnb_pc.fix .lnb_main li:hover a {
+  background-color: #fff;
+  color: black;
+}
+
+.lnb_pc.fix .lnb_main li .down li a {
+  background-color: #fff;
+  color: #000;
+}
+
+.lnb_pc.fix .lnb_main li .down li:hover a {
+  background-color: #008BCC;
+  color: white;
 }
 
 .fixed {
@@ -1521,8 +1538,12 @@ label {
     left: -800px;
     top: 70px;
     bottom: auto;
-    border: 1px solid #625e5e;
     animation: none
+  }
+
+  .popup_main {
+    border: 1px solid #625e5e;
+
   }
 
   .popup_img img {
@@ -1536,7 +1557,6 @@ label {
   }
 
   .popup_sub {
-    top: 69%;
     width: 45%;
   }
 
@@ -1951,10 +1971,8 @@ label {
   }
 
   .popup_sub {
-    left: auto;
-    width: 35%;
-    top: 30%;
-    right: 10px;
+    display: block;
+    width: 100%;
   }
 
   .visual img {
@@ -2171,13 +2189,6 @@ label {
 }
 
 @media(min-width:1070px) {
-  .popup_sub {
-    top: 30%;
-    right: 5%;
-    left: auto;
-    width: 30%;
-  }
-
   .header .menu label {
     display: none;
   }
@@ -2278,7 +2289,7 @@ label {
     line-height: 50px;
     text-align: center;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 0.2s;
     font-size: 1.4rem;
     background-color: #fff;
     z-index: 1;
@@ -2690,11 +2701,6 @@ label {
 }
 
 @media(min-width:1274px) {
-  .popup_sub {
-    width: 300px;
-    right: 15%;
-  }
-
   .header .logo h1 {
     font-size: 2.8rem;
   }
