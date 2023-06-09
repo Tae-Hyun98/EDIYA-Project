@@ -18,9 +18,11 @@
 > 
 ## 📌 이미지
 <a href='#!'>PC버전  
-  <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/6c3a23f2-2ed4-4978-8b99-33492b93cbba" width="500" height="400"/>  
+  <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/6c3a23f2-2ed4-4978-8b99-33492b93cbba" height="400"/>  
+  
+  
   모바일/태블릿버전  
-  <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/6c3a23f2-2ed4-4978-8b99-33492b93cbba" width="500" height="400"/> 
+  <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/bb73171a-50a3-4194-8e0f-96c71c430cdd" width="400" height="800"/> 
 </a>
 ## 📌 느낀점
 > css 미디어쿼리를 이용하여 반응형으로 제작하며 여러 해상도에 적합한 웹을 만들수 있는 능력을 기를수 있었으며,
