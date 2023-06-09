@@ -1,9 +1,11 @@
 <a href="https://ediya-portfolio.netlify.app/">![header](https://capsule-render.vercel.app/api?type=soft&color=002053&height=120&section=header&text=EDIYA%20STORE&fontSize=50&fontColor=fff&animation=fadeIn)</a>
-## 📌 EDIYA COFFEE
+## 📌 EDIYA STORE
 
 > 적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
 > 제작후 netlify로 배포를 하였습니다. 
->   
+>
+> [이디야스토어](https://ediya-portfolio.netlify.app/, "사이트이동") <<클릭
+> 
 > 개발 기간  
 > 2023.03.28 ~ 2023.5.1
 >
@@ -13,9 +15,11 @@
 <a href="#!"><img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a> 
 >
 > Tools  
-> <a href="#!"><img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
-> <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
-> 
+> <a href="#!"><img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
+> <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>  
+
+# 주요소스
+
 ## 📌 이미지
 ### PC버전  
   <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/5642993e-5463-44fb-9118-a65e30c58c08" height="450"/>  
