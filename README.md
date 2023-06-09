@@ -1,4 +1,4 @@
-<a href="https://ediya-portfolio.netlify.app/">![header](https://capsule-render.vercel.app/api?type=soft&color=002053&height=120&section=header&text=EDIYA%20STORE&fontSize=50&fontColor=fff&animation=fadeIn)</a>
+<a href="https://ediya-portfolio.netlify.app/" target="_blank">![header](https://capsule-render.vercel.app/api?type=soft&color=002053&height=120&section=header&text=EDIYA%20STORE&fontSize=50&fontColor=fff&animation=fadeIn)</a>
 ## 📌 EDIYA STORE
 
 > 적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
