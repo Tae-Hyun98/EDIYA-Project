@@ -1,6 +1,6 @@
 <a href="#!">![header](https://capsule-render.vercel.app/api?type=soft&color=002053&height=120&section=header&text=EDIYA%20STORE&fontSize=50&fontColor=fff&animation=fadeIn)</a>
-# 📌 프로젝트
-### 1. EDIYA COFFEE
+## 📌 EDIYA COFFEE
+
 > 이디야커피 스토어를 참고하여 반응형웹으로 제작한 개인프로젝트 (반응형웹)  
 > 개발 기간: 2023.03.28 ~ 2023.5.1
 >
@@ -13,5 +13,8 @@
 > <a href="#!"><img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
 > <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
 > 
-# 📌 이미지
+## 📌 이미지
 
+## 📌 느낀점
+> css 미디어쿼리를 이용하여 반응형으로 제작하며 여러 해상도에 적합한 웹을 만들수 있는 능력을 기를수 있었으며,
+> 또한, 반응형웹을 제작하기 위해서는 미리 각 해상도에 맞는 배치들을 미리 구상을하고 코드를 짜는것이 좋다는것을 느끼게 되었습니다.
