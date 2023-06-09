@@ -4,7 +4,7 @@
 > 적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
 > 제작후 netlify로 배포를 하였습니다. 
 >
-> [이디야스토어](https://ediya-portfolio.netlify.app/, "사이트이동") <<클릭
+> [이디야스토어](https://ediya-portfolio.netlify.app/) <<클릭
 > 
 > 개발 기간  
 > 2023.03.28 ~ 2023.5.1
