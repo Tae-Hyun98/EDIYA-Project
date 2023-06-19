@@ -579,35 +579,23 @@ label {
   font-size: 1.1rem;
 }
 
-/***********quick************/
-.quick {
-  position: fixed;
-  bottom: 10px;
-  right: 0;
-  margin-right: 5px;
-  z-index: 999;
-}
+/***********top************/
 
-.quick a {
-  display: block;
-  border: 1px solid #ccc;
+.top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #777;
   border-radius: 50%;
   text-align: center;
-  width: 45px;
-  height: 45px;
+  padding: 15px;
   font-size: 1.2rem;
-  line-height: 45px;
   background-color: #fff;
-  margin-bottom: 7px;
 }
 
-.quick .dis {
-  display: none;
-}
-
-.quick .blind {
-  display: none;
-}
 
 /**************footer**************/
 .footer {
