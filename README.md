@@ -68,6 +68,42 @@ $(window).scroll(function () {
       });
 ```
 
+### jQuery를 이용한 퀵메뉴  
+#### 퀵메뉴를 현재 높이의 중간에 오도록 하고, 각 해상도 별로 height가 다르기때문에 구간별로 설정을 하였습니다.
+```JavaScript
+$(window).resize(function () {
+        if (window.innerWidth > 1274) {
+          $(function () {
+            $('.quick').css('top', $(window).height() / 2 - $('.quick').height() / 2);
+            $(window).scroll(function () {
+              let point = $(this).scrollTop() + ($(window).height() / 2 - $('.quick').height() / 2);
+              $('.quick').stop().animate({
+                top: point
+              }, 200);
+            });
+          });
+          let delay = 500;
+          let timer = null;
+          $(window).on('resize', function () {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+              document.location.reload();
+            }, delay);
+          });
+        } else if (window.innerWidth > 769) {
+          $(function () {
+            $('.quick').css('top', $(window).height() / 1.01 - $('.quick').height() * 1.01);
+            $(window).scroll(function () {
+              let point = $(this).scrollTop() + ($(window).height() / 1.03 - $('.quick').height() *
+                1.03);
+              $('.quick').stop().animate({
+                top: point
+              }, 200);
+            });
+          });
+```
+
 ## 📌 느낀점
-> css 미디어쿼리를 이용하여 반응형으로 제작하며 여러 해상도에 적합한 웹을 만들수 있는 능력을 기를수 있었으며,
+> 첫 반응형 프로젝트로써 html으로 마크업을 할수 있는 능력과, 순수 css 미디어쿼리를 이용하여 반응형으로 스타일을 입히며 여러 해상도에 적합한 웹을 만들수 있는 능력을 기를수 있었으며,
 > 또한, 반응형웹을 제작하기 위해서는 미리 각 해상도에 맞는 배치들을 미리 구상을하고 코드를 짜는것이 좋다는것을 느끼게 되었습니다.
+> 프로젝트를 통해 jQuery의 문법을 활용할 수 있는 계기가 되었습니다.
