@@ -1,15 +1,40 @@
 ![header](https://capsule-render.vercel.app/api?type=soft&color=002053&height=150&section=header&text=EDIYA%20STORE&fontSize=50&fontColor=fff&animation=fadeIn)
-## 📌 EDIYA STORE (개인프로젝트)
+## 📌 EDIYA STORE (개인프로젝트)  
+> 적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
 
->  적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
-> 모바일해상도부터 만들기시작하여 PC해상도까지 제작을하였습니다.  
-> 제작후 netlify로 배포를 하였습니다. 
->
->[이디야스토어](https://ediya-portfolio.netlify.app/) <<클릭
->
-> 개발 기간
-> 2023.03.28 ~ 2023.5.1
->
+
+## 목차
+  ### 1. [프로젝트 소개](#1-프로젝트-소개)
+  ### 2. [제작기간](#2-제작-기간--20230621--20230630)
+  ### 3. [사용한 기술스택](#3-사용한-skills)
+  ### 4. [페이지 구성](#4-페이지-구성-1)
+  ### 5. [주요기능(코드)](#5-주요기능)   
+   - #### [라우팅 페이지전환](#5-1-라우팅-페이지전환)  
+   - #### [동적라우팅](#5-2-상품-리뷰문의기능)
+   - #### [장바구니 전역상태관리](#5-2-상품-리뷰문의기능)  
+  ### 6. [느낀점](#6-느낀점-1)
+
+<br/> 
+
+## 1. 프로젝트 소개
+- 적응형웹인 이디야커피 스토어를 반응형웹으로 제작한 사이트입니다.  
+
+- 퍼블리싱 및 기능구현은 **개인 100%** 작업입니다.
+
+- 모바일해상도부터 만들기시작하여 PC해상도까지 제작을하였습니다.
+  
+- breakpoint는 모바일버전은 601px, 태블릿버전은 601 ~ 769px, 저해상도 PC는 769 ~ 1070px, 1070px ~ 1274px, 고해상도 PC는 1274px ~ 으로 나누었으며, 각 breakpoint에 도달할 시 새로고침이 되도록 구현하였습니다.
+
+- 프로젝트는 제작후 netlify로 배포를 하였습니다. 
+
+
+<br/>
+
+## 2. 제작 기간 : 2023.03.28 ~ 2023.05.01
+
+<br/>
+
+## 3. 사용한 Skills  
 > 사용한 기술 스택  
 <a href="#!"><img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
 <a href="#!"><img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white"/></a>
@@ -17,7 +42,9 @@
 >
 > Tools  
 > <a href="#!"><img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
-> <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>  
+> <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
+
+<br/>
 
 ## 📌 이미지
 ### PC버전  
@@ -69,7 +96,7 @@ $(window).scroll(function () {
 ```
 
 ### jQuery를 이용한 퀵메뉴  
-#### 퀵메뉴를 현재 높이의 중간에 오도록 하고, 각 해상도 별로 height가 다르기때문에 구간별로 설정을 하였습니다.
+#### 퀵메뉴를 현재 높이의 중간에 오도록 하고, 각 해상도 별로 높이가 다르기때문에 구간별로 설정을 하였습니다.
 ```JavaScript
 $(window).resize(function () {
         if (window.innerWidth > 1274) {
