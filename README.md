@@ -9,9 +9,9 @@
   ### 3. [사용한 기술스택](#3-사용한-skills)
   ### 4. [페이지 구성](#4-페이지-구성-1)
   ### 5. [주요기능(코드)](#5-주요기능)   
-   - #### [라우팅 페이지전환](#5-1-라우팅-페이지전환)  
-   - #### [동적라우팅](#5-2-상품-리뷰문의기능)
-   - #### [장바구니 전역상태관리](#5-2-상품-리뷰문의기능)  
+   - #### [](#)  
+   - #### [](#)
+   - #### [](#)  
   ### 6. [느낀점](#6-느낀점-1)
 
 <br/> 
@@ -42,6 +42,11 @@
 <a href="#!"><img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a> 
 <a href="#!"><img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
 <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
+
+<br/>
+
+## 4. 페이지 구성  
+페이지는 **메인페이지, 서브페이지**로 구성되어있습니다.
 
 <br/>
 
