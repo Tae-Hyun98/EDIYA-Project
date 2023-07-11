@@ -64,7 +64,7 @@ label {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 9999;
   animation: popani 1.5s 1;
 }
 
@@ -1209,7 +1209,6 @@ label {
   border: 1px solid #777;
   text-align: center;
   height: 25px;
-  font-weight: bold;
 }
 
 .all_select {
@@ -1547,7 +1546,7 @@ label {
   }
 
   .popup_img img {
-    height: 410px;
+    height: 450px;
     border-radius: 0;
   }
 
@@ -1932,7 +1931,6 @@ label {
   #array {
     width: 160px;
     height: 24px;
-    text-align: center;
   }
 
   .quick .dis {
@@ -2169,10 +2167,6 @@ label {
 
   .bottom_banner {
     flex-wrap: nowrap;
-  }
-
-  .bottom_banner img {
-    height: 200px;
   }
 
   .quick {
@@ -2631,7 +2625,7 @@ label {
   }
 
   .bottom_banner img {
-    height: 320px;
+    height: auto;
   }
 
   .la_more_dr a {
