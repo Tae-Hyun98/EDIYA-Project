@@ -21,6 +21,8 @@
 
 - 퍼블리싱 및 기능구현은 **개인 100%** 작업입니다.
 
+- 이디야프로젝트는 마크업과 스타일은 순수 HTML5와 CSS3를 이용하여 제작하였으며, 화면제어 및 애니메이션은 jQuery를 사용하여 제작하였습니다.
+
 - 모바일해상도부터 만들기시작하여 PC해상도까지 제작을하였습니다.
   
 - breakpoint는 모바일버전은 601px, 태블릿버전은 601 ~ 769px, 저해상도 PC는 769 ~ 1070px, 1070px ~ 1274px, 고해상도 PC는 1274px ~ 으로 나누었으며, 각 breakpoint에 도달할 시 새로고침이 되도록 구현하였습니다.
@@ -35,14 +37,11 @@
 <br/>
 
 ## 3. 사용한 Skills  
-> 사용한 기술 스택  
 <a href="#!"><img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/></a>
 <a href="#!"><img src="https://img.shields.io/badge/css3-1572B6?style=flat&logo=css3&logoColor=white"/></a>
 <a href="#!"><img src="https://img.shields.io/badge/jquery-0769AD?style=flat&logo=jquery&logoColor=white"/></a> 
->
-> Tools  
-> <a href="#!"><img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
-> <a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/visual studio code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/></a>
+<a href="#!"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/></a>
 
 <br/>
 
