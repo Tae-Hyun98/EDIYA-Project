@@ -59,7 +59,7 @@
   <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/bb73171a-50a3-4194-8e0f-96c71c430cdd" width="400" height="800" margin-right="30"/>
   <img src="https://github.com/Tae-Hyun98/EDIYA-Project/assets/119056869/51e2c737-b358-4977-a5f8-e7438424c362" width="400" height="800"/> 
   
-## 주요코드  
+## 5. 주요코드  
 ### 각 구간별 미디어쿼리 적용
 ```css
 @media (min-width:601px) {
@@ -134,7 +134,7 @@ $(window).resize(function () {
           });
 ```
 
-## 📌 느낀점
+## 6. 느낀점
 > 첫 반응형 프로젝트로써 html으로 마크업을 할수 있는 능력과, 순수 css 미디어쿼리를 이용하여 반응형으로 스타일을 입히며 여러 해상도에 적합한 웹을 만들수 있는 능력을 기를수 있었으며,
 > 또한, 반응형웹을 제작하기 위해서는 미리 각 해상도에 맞는 배치들을 미리 구상을하고 코드를 짜는것이 좋다는것을 느끼게 되었습니다.
 > 프로젝트를 통해 jQuery의 문법을 활용할 수 있는 계기가 되었습니다.
